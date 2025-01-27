@@ -1,0 +1,90 @@
+---
+title: "Untitled"
+format: docx
+editor:
+  source: default
+  markdown: 
+    wrap: none
+    canonical: false
+---
+
+Submission form URL: https://pretalx.com/sips2025-budapest/cfp
+
+**Proposal title:** Reproducible research and collaboration in git + Github for Rstudio users
+
+**Session type:** Workshop: Guided instruction and training of a specific skill (90 minutes)
+
+**Abstract:**
+
+Participants will practice creating a GitHub repository and adding/editing code and text in Rstudio. A few tools will be provided to help them take in these practices and apply them in their everyday workflows. As a result, they are expected to have resources to help them make their research more open and reproducible, including the whole research workflow and not just its outcomes.
+
+Outline:
+
+-   Creating a repository in GitHub.
+-   Cloning the repository locally with Rstudio.
+-   Tracking changes.
+-   A few good practices for versioning research projects.
+
+Intended audience: Participants should ideally be proficient in R (or Python); if they are not familiar with these, they can still participate but they will not be able to get the full potential from it. For best use of the workshop, a "BYOP" (Bring your own project) format is encouraged: Participants can use their own data, script(s), notebook(s), and/or computable documents.
+
+**Notes:**
+
+The workshop works best with a limited number of participants, as the co-speakers and I will need to be attentive to the participants to resolve technical issues.
+
+A limit of around 12 participants would be advisable.
+
+Participants will need to prepare the following in advance:
+
+-   Install in their computers: R, Git, and Rstudio.
+-   Create a GitHub account.
+
+Having a sign-up system for participants would be helpful, so we can contact them beforehand to give them the preparation instructions and provide technical assistance if necessary.
+
+**Don't record this session.** Unchecked
+
+**Additional Speaker(s):** cristina.rodriguezp@uam.es
+
+---
+
+**Acknowledgement of Co-Authors:** Jesus Sierralaya (jesus.sierralaya@cardenalcisneros.es, will also be a co-presenter)
+
+**Pleas classify your session as the theme if fits best in:** Skills - Content providing training in particular skills or techniques
+
+**If accepted, how long would your session be?**
+
+- 90 min (recommeneded for unconferences, workshops, or hackathons)
+- 2 hours (120 min)
+
+**Duration: Rationale**
+
+This workshop was originally conceived as a 4-hour long training. It has been tested once as a 90-minute session in an online format; this previous experience has shown that there may be technical issues that need to be solved in real-time, making it tight to fit in 90 minutes. Also, an additional 30-minute margin would benefit the participants, providing time for free practice, answering questions, etc.
+
+**How will the session's content foster diversity & inclusion (e.g., who will present, who will it serve), and how will it improve psychological science?**
+
+The workshop will be co-facilitated by two graduate students. We will be two male and 1 female researcher, thus striving for some gender balance in our deliverance. Also, one of the presenters is originary from Peru, a country considered an LMIC.
+
+The session will serve researchers who are committed to open, transparent, and reproducible scientific practices in the broader sense. Knowing practical version-control skills can help make research more transparent, by providing a means record the research process as a scientific outcome and open it up to a wide audience. Also, our approach helps achieve computational reproducibility of the research outputs.
+
+Researchers from remote areas, who may have unstable internet connections, may benefit especially from learning about the distributed version-control system we help them set, as it allows working both locally and remotely, depending on bandwidth issues.
+
+**Please note any pre-requisite knowledge/expertise you will expect from attendees (i.e., is the session most appropriate for someone who already has experience with a topic?).**
+
+Participants should ideally be proficient in R (or Python); if they are not familiar with these, they can still participate but they will not be able to get the full potential from it.
+
+**If my session is not accepted, I would be okay with presenting it as a short pitch ("lightning talk") instead.** Unchecked
+
+**Any other comments about this proposal we should be aware of?** My co-facilitators have applied for the student funding. It is possible that they cannot attend if no funding is granted.
+
+**Your affiliation** Universidad Nacional de Educación a Distancia (UNED), Spain
+
+**What is your ORCID** https://orcid.org/0000-0003-3021-3878
+
+**What is your current employment position?** Professor (full, assistant, associate)
+
+**Link to your OSF profile** https://osf.io/58m7u/
+
+**Please provide us with your preferred Google Docs account email.** danielmorillo.ac@gmail.com
+
+**Please provide an email address so we can add you to our Slack channel.** danielmorillo.ac@gmail.com
+
+**Social Media Handles** DaniMori (GitHub), https://www.researchgate.net/profile/Daniel-Morillo
