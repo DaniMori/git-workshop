@@ -73,17 +73,3 @@ Participants should ideally be proficient in R (or Python); if they are not fami
 **If my session is not accepted, I would be okay with presenting it as a short pitch ("lightning talk") instead.** Unchecked
 
 **Any other comments about this proposal we should be aware of?** My co-facilitators have applied for the student funding. It is possible that they cannot attend if no funding is granted.
-
-**Your affiliation** Universidad Nacional de Educación a Distancia (UNED), Spain
-
-**What is your ORCID** https://orcid.org/0000-0003-3021-3878
-
-**What is your current employment position?** Professor (full, assistant, associate)
-
-**Link to your OSF profile** https://osf.io/58m7u/
-
-**Please provide us with your preferred Google Docs account email.** danielmorillo.ac@gmail.com
-
-**Please provide an email address so we can add you to our Slack channel.** danielmorillo.ac@gmail.com
-
-**Social Media Handles** DaniMori (GitHub), https://www.researchgate.net/profile/Daniel-Morillo
