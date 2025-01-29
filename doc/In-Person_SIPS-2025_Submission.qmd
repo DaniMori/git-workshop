@@ -7,7 +7,9 @@ editor:
     canonical: false
 ---
 
-Submission form URL: https://pretalx.com/sips2025-budapest/cfp
+*Submission form URL:* https://pretalx.com/sips2025-budapest/cfp
+
+*Proposal link:* https://pretalx.com/sips2025-budapest/talk/review/FNYUAXLYN3DEUGUVVNUVJH3XQKCEZAXC
 
 **Proposal title:** Reproducible research and collaboration in git + Github for Rstudio users
 
