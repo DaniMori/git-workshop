@@ -7,9 +7,9 @@ editor:
     canonical: false
 ---
 
-*Submission form URL:* https://pretalx.com/sips2025-budapest/cfp
+*Submission form URL:* <https://pretalx.com/sips2025-budapest/cfp>
 
-*Proposal link:* https://pretalx.com/sips2025-budapest/talk/review/FNYUAXLYN3DEUGUVVNUVJH3XQKCEZAXC
+*Proposal link:* <https://pretalx.com/sips2025-budapest/talk/review/FNYUAXLYN3DEUGUVVNUVJH3XQKCEZAXC>
 
 **Proposal title:** Reproducible research and collaboration in git + Github for Rstudio users
 
@@ -30,16 +30,21 @@ Intended audience: Participants should ideally be proficient in R (or Python); i
 
 **Notes:**
 
-The workshop works best with a limited number of participants, as the co-speakers and I will need to be attentive to the participants to resolve technical issues.
+The workshop works best with a limited number of participants, as the co-facilitators and I will need to be attentive to the participants to resolve technical issues.
 
 A limit of around 12 participants would be advisable.
 
 Participants will need to prepare the following in advance:
 
--   Install in their computers: R, Git, and Rstudio.
--   Create a GitHub account.
+- Install in their computers: R, Git, and Rstudio.
+- Create a GitHub account.
 
-Having a sign-up system for participants would be helpful, so we can contact them beforehand to give them the preparation instructions and provide technical assistance if necessary.
+A sign-up system for participants would be helpful, so we can contact them beforehand to give them the preparation instructions and provide technical assistance if necessary.
+
+Also, the following material will be necessary:
+
+- A computer with internet access and a projector.
+- Sticky notes of at least two colors for real-time participant feedback.
 
 **Don't record this session.** Unchecked
 
