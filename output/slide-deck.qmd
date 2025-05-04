@@ -139,7 +139,7 @@ GitHub](https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/) \@
 
 <br>
 
--   Nice GUI & features on top of VC
+-   Nice GUI & features on top of Version Control
 
 ## git jargon
 
