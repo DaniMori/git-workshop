@@ -36,7 +36,7 @@ A limit of around 12 participants would be advisable.
 
 Participants will need to prepare the following in advance:
 
-- Install in their computers: R, Git, and Rstudio.
+- Install in their computers: R, Git, Rstudio and Rtools ( https://cran.r-project.org/bin/windows/Rtools/)
 - Create a GitHub account.
 
 A sign-up system for participants would be helpful, so we can contact them beforehand to give them the preparation instructions and provide technical assistance if necessary.
