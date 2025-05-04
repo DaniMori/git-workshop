@@ -1,6 +1,6 @@
 ---
 title:       "Version control with git + GitHub for scientific workflows"
-date:        2024-10-15
+date:        2025-06-26
 date-format: long
 author:      |
   <table>
