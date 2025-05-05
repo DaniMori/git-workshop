@@ -36,7 +36,7 @@ A limit of around 12 participants would be advisable.
 
 Participants will need to prepare the following in advance:
 
-- Install in their computers: R, Git, Rstudio and Rtools ( https://cran.r-project.org/bin/windows/Rtools/)
+- Install in their computers: R, Git, and Rstudio.
 - Create a GitHub account.
 
 A sign-up system for participants would be helpful, so we can contact them beforehand to give them the preparation instructions and provide technical assistance if necessary.
@@ -48,11 +48,11 @@ Also, the following material will be necessary:
 
 **Don't record this session.** Unchecked
 
-**Additional Speaker(s):** cristina.rodriguezp@uam.es, jsierral@ucm.es
+**Additional Speaker(s):** cristina.rodriguezp@uam.es
 
 ---
 
-**Acknowledgement of Co-Authors:** Jesus Sierralaya (jsierral@ucm.es, will also be a co-presenter)
+**Acknowledgement of Co-Authors:** Jesus Sierralaya (jesus.sierralaya@cardenalcisneros.es, will also be a co-presenter)
 
 **Please classify your session as the theme if fits best in:** Skills - Content providing training in particular skills or techniques
 
