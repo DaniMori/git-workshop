@@ -87,16 +87,11 @@ press `CTRL + click`. After clicking the link, direct attention to button
 
 <br>
 
--   Paste the error message to the chat
+-   If you're stuck, raise your hand
 
 <br>
 
--   Kevin will help you out over chat
-
-<br>
-
--   As a last resort, Kevin will take you to a private breakout room to discuss
-    and try to resolve computer issues
+-   Cristina and Jesus will assist you throughout the workshop
 
 ::: notes
 -   <!-- TODO: Notes about technical assistance? -->
