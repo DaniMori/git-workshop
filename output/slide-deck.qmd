@@ -6,7 +6,8 @@ author:      |
   <table>
     <tr>
       <td>Daniel Morillo, Ph.D.</td>
-      <td>Kevin Bairos-Novak</td>
+      <td>Cristina Rodríguez Prada</td>
+      <td>Jesus Sierralaya</td>      
     </tr>
     <tr>
       <td>
