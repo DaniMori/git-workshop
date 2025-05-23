@@ -10,13 +10,19 @@ nocite: '@breslow_design_1999'
 
 # Respository `sortee-git-workshop`
 
-Workshop "Reproducible research and collaboration in git and GitHub" at
-the 2024 SORTEE Conference.
+Workshop "Reproducible research and collaboration in git and GitHub for Rstudio users"
 
-Forked (explicitly) and adapted from the repository
-"Version control for scientific workflows workshop",
-project for a workshop ran at the Division of Insurance Medicine,
-Karolinska Institutet, on June 20, 2023.
+(Adapted, explicit fork from the repository
+["Version control for scientific workflows workshop"](https://github.com/DaniMori/vc-workshop).)
+
+## Past editions
+
+- Workshop "Version control for scientific workflows workshop" at the Division of Insurance Medicine,
+Karolinska Institutet (Stockholm, Sweden - Jun 20, 2023).
+
+- Workshop “Reproducible research and collaboration in git and GitHub” at the 2024 SORTEE Conference (Online - Oct 15, 2024).
+
+- Workshop "Reproducible research and collaboration in git and GitHub for Rstudio users" at the In-person SIPS 2025 Meeting (Budapest, Hungary - Jun 26, 2025).
 
 # License
 

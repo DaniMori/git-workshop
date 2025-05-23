@@ -1,12 +1,25 @@
 
 # Respository `sortee-git-workshop`
 
-Workshop “Reproducible research and collaboration in git and GitHub” at
-the 2024 SORTEE Conference.
+Workshop “Reproducible research and collaboration in git and GitHub for
+Rstudio users”
 
-Forked (explicitly) and adapted from the repository “Version control for
-scientific workflows workshop”, project for a workshop ran at the
-Division of Insurance Medicine, Karolinska Institutet, on June 20, 2023.
+(Adapted, explicit fork from the repository [“Version control for
+scientific workflows
+workshop”](https://github.com/DaniMori/vc-workshop).)
+
+## Past editions
+
+- Workshop “Version control for scientific workflows workshop” at the
+  Division of Insurance Medicine, Karolinska Institutet (Stockholm,
+  Sweden - Jun 20, 2023).
+
+- Workshop “Reproducible research and collaboration in git and GitHub”
+  at the 2024 SORTEE Conference (Online - Oct 15, 2024).
+
+- Workshop “Reproducible research and collaboration in git and GitHub
+  for Rstudio users” at the In-person SIPS 2025 Meeting (Budapest,
+  Hungary - Jun 26, 2025).
 
 # License
 
@@ -44,33 +57,33 @@ Origin of all the image files attributed in the corresponding slides in
 Start by installing the following software components:
 
 - [R version
-  4.4.2](https://cran.rstudio.com/bin/windows/base/old/4.4.2/): In
+  4.5.0](https://cran.rstudio.com/bin/windows/base/old/4.5.0/): In
   Windows, using the [binary
-  installer](https://cran.rstudio.com/bin/windows/base/old/4.4.2/R-4.4.2-win.exe)
+  installer](https://cran.rstudio.com/bin/windows/base/old/4.5.0/R-4.5.0-win.exe)
   is recommended.
 
 <!-- -->
 
 - [Rstudio Desktop](https://posit.co/download/rstudio-desktop/):
   Although not strictly necessary, it is recommended to install the
-  Rstudio IDE; for strict reproducibility, use build [2024.12.0+467 for
+  Rstudio IDE; for strict reproducibility, use build [2025.05.0+496 for
   Windows
-  10/11](https://download1.rstudio.org/electron/windows/RStudio-2024.12.0-467.exe).
+  10/11](https://download1.rstudio.org/electron/windows/RStudio-2025.05.0-496.exe).
 
 <!-- -->
 
 - [Quarto publishing system](https://quarto.org/): An additional
   component used by Rstudio to generate and publish literate computing
-  outputs. For strict reproducibility please use build 1.5.57; On
+  outputs. For strict reproducibility please use build 1.6.42; On
   Windows, use [the 64-bit
-  installer](https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.57/quarto-1.5.57-win.msi).
+  installer](https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-win.msi).
 
 <!-- -->
 
 - [Git client](https://git-scm.com/download): Install the Git client in
   order to be able to clone locally the project repository. On Windows,
   use [the 64-bit Windows
-  installer](https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe).
+  installer](https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe).
 
 ## Installing the project locally
 
