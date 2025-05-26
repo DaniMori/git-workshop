@@ -596,84 +596,6 @@ If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
 (local) commit (**NOT RECOMMENDED** unless you have some experience)
 :::
 
-## Using a dataset (I)
-
-<br>
-
-::: nonincremental
--   Download <https://bit.ly/gitws-dataset>
-
-OR
-
--   copy ***a data file of your own***
-
-to the "dat" folder of your local repository
-:::
-
--   Why doesn't it show up in the "Git" tab?
-
--   How would you add a file in "dat" to your repository?
-
-::: notes
-**NOTE**: Some attendees may be distrusting that their data will be uploaded to
-GitHub, thus preventing them from using their own dataset. We should highlight
-that there is no risk in adding files to the "dat" folder, and that nothing will
-be uploaded to GitHub unless they intentionally do it.
-
-**NOTE**: To avoid opening the file link in the same tab as the presentation,
-press `CTRL + click`. After clicking the link, direct attention to button
-"Download raw file"
-
-The "dat" folder is ignored (i.e. any file whose path "starts with" that folder)
-
-The line in ".gitignore" can be commented (with a \# in front) or deleted, the
-file staged, and then the line uncommented again.
-
-OR
-
-A new line with a `!` in front of the file path can be added.
-
-It can also be done in the terminal (but no need to learn the commands)
-:::
-
-## Using a dataset (and II)
-
-::: nonincremental
--   Change the file path in line 20 of "src/Analysis.R" to point to your
-    dataset:
-
-``` r
-## Read dataset:
-penguins_data <- read_csv(
-  # TODO: Change "<dataset_filename>" by the name of your own dataset, if
-  #   necessary (e.g., "dat/penguins.csv")
-  file = "dat/<dataset_filename>.csv",
-  ...
-```
-
--   Notice the "working directory" on top of the "Console" tab
-:::
-
-::: {.callout-tip .fragment}
-Use ["relative paths"](https://phoenixnap.com/kb/absolute-path-vs-relative-path)
-to make your code reproducible across computers
-:::
-
-::: notes
-Using relative paths:
-
--   The working directory will always be the base folder for Rstudio projects
-
-NOTE: If asked about the meaning of "\~", explain the "User home". It can be
-shown with `normalizePath("~", winslash = '/')`
-
--   Always make paths "relative" to the working directory
-
--   NEVER use `setwd()` in your scripts
-
--   Use `here::here()` instead
-:::
-
 # The git workflow
 
 ![](../www/git-commands.png){fig-align="center" height="520"}
@@ -814,6 +736,98 @@ SHOULD NOT SPEND TOO MUCH TIME ON THIS
 [flaticon.com](https://www.flaticon.com/free-icon/lifting-double-dumbbells_82802)
 :::
 
+## Using a dataset (I)
+
+<br>
+
+::: nonincremental
+-   Download <https://bit.ly/gitws-dataset>
+
+OR
+
+-   copy ***a data file of your own***
+
+to the "dat" folder of your local repository
+:::
+
+-   Why doesn't it show up in the "Git" tab?
+
+-   How would you add a file in "dat" to your repository?
+
+::: notes
+**NOTE**: Some attendees may be distrusting that their data will be uploaded to
+GitHub, thus preventing them from using their own dataset. We should highlight
+that there is no risk in adding files to the "dat" folder, and that nothing will
+be uploaded to GitHub unless they intentionally do it.
+
+**NOTE**: To avoid opening the file link in the same tab as the presentation,
+press `CTRL + click`. After clicking the link, direct attention to button
+"Download raw file"
+
+The "dat" folder is ignored (i.e. any file whose path "starts with" that folder)
+
+The line in ".gitignore" can be commented (with a \# in front) or deleted, the
+file staged, and then the line uncommented again.
+
+OR
+
+A new line with a `!` in front of the file path can be added.
+
+It can also be done in the terminal (but no need to learn the commands)
+:::
+
+## Using a dataset (and II)
+
+::: nonincremental
+-   Change the file path in line 20 of "src/Analysis.R" to point to your
+    dataset:
+
+``` r
+## Read dataset:
+penguins_data <- read_csv(
+  # TODO: Change "<dataset_filename>" by the name of your own dataset, if
+  #   necessary (e.g., "dat/penguins.csv")
+  file = "dat/<dataset_filename>.csv",
+  ...
+```
+
+-   Notice the "working directory" on top of the "Console" tab
+:::
+
+::: {.callout-tip .fragment}
+Use ["relative paths"](https://phoenixnap.com/kb/absolute-path-vs-relative-path)
+to make your code reproducible across computers
+:::
+
+::: notes
+Using relative paths:
+
+-   The working directory will always be the base folder for Rstudio projects
+
+NOTE: If asked about the meaning of "\~", explain the "User home". It can be
+shown with `normalizePath("~", winslash = '/')`
+
+-   Always make paths "relative" to the working directory
+
+-   NEVER use `setwd()` in your scripts
+
+-   Use `here::here()` instead
+:::
+
+## Making new commits
+
+<br>
+
+-   Make sure your script runs without errors
+
+<br>
+
+-   Commit changes
+
+<br>
+
+-   Maybe push your recent commits?
+
 ## Making your repository "Reusable"
 
 <br>
@@ -876,20 +890,6 @@ Press "knit" button to generate "README.md". This overwrites the template's own
 It has installation instructions and all the necessary information (e.g.,
 license file; a brief comment on licensing may be in place here).
 :::
-
-## Making new commits
-
-<br>
-
--   Make sure your script runs without errors
-
-<br>
-
--   Commit changes
-
-<br>
-
--   Maybe push your recent commits?
 
 ## Viewing your history
 
