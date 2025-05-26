@@ -828,11 +828,11 @@ shown with `normalizePath("~", winslash = '/')`
 
 -   Maybe push your recent commits?
 
-## Making your repository "Reusable"
+## Making your repository "Reusable" {.smaller}
 
 <br>
 
-::: nonincremental
+:::: nonincremental
 -   Edit "README.Rmd":
 
     -   Change `<repository-name>` by your repo (lines 12-14)
@@ -840,15 +840,15 @@ shown with `normalizePath("~", winslash = '/')`
     -   Change `<username>` by your GitHub user name (lines 16-18)
 
     -   Edit description in section "Repository" (lines 23-24)
-:::
 
-::: {.fragment .nonincremental}
+::: fragment
 Optionally:
 
 -   Delete unnecessary folders
 
 -   Delete description of unused folders (circa ll. 158-181)
 :::
+::::
 
 -   Knit "README.md" (blue yarn above editor)
 
