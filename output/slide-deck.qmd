@@ -494,32 +494,42 @@ I)](https://blogs.cisco.com/learning/git-for-network-engineers-series-the-basics
 
 <br>
 
-::: nonincremental
+:::: nonincremental
 -   Click on the "Git" tab in Rstudio
 
 -   What do the different "Status" icons mean?
 
+-   Delete folder "apps". What happens?
+
+::: fragment
 Optionally:
 
--   Right click on a "deleted file", then "Revert". What happens?
+-   Right click on "apps/.gitkeep", then "Revert". What happens?
+:::
+::::
 
 -   BEWARE of reverting modified files!
-:::
 
 ::: notes
--   Deleted folders "do not exist". It only considers "deleted files".
+\[AFTER DELETING FOLDER:\]
+
+-   Folders "do not exist" (only "files").
 
 -   Deleting an empty folder will not show anything in the Git tab.
 
--   Deleting a non-empty folder shows one line for each deleted file in the Git
-    tab.
+-   Deleting a non-empty folder will show one line for each deleted file in the
+    Git tab.
 
 -   This is why respositories should NEVER be nested
 
--   REVERT: Recovers the LAST status of a file from the last point in history.
+\[REVERTING:\]
 
--   Reverting can be tried with "README.md" (but NOT with "README.Rmd"); then it
-    can be knit again.
+-   Recovers the LAST status of a file from the last point in history (commit).
+
+\[AFTER REVERTING:\]
+
+-   If you "revert" the changes in a non-committed file, all the work since the
+    last commit is lost.
 :::
 
 ## Using a dataset (I)
