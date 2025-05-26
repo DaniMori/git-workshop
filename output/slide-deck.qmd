@@ -828,7 +828,7 @@ shown with `normalizePath("~", winslash = '/')`
 
 -   Maybe push your recent commits?
 
-## Making your repository "Reusable" {.smaller}
+## Making your repo "Reusable" {.smaller}
 
 <br>
 
@@ -842,11 +842,11 @@ shown with `normalizePath("~", winslash = '/')`
     -   Edit description in section "Repository" (lines 23-24)
 
 ::: fragment
-Optionally:
+-   Optionally:
 
--   Delete unnecessary folders
+    -   Delete unnecessary folders
 
--   Delete description of unused folders (circa ll. 158-181)
+    -   Delete description of unused folders (circa ll. 158-181)
 :::
 ::::
 
