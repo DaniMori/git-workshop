@@ -652,7 +652,7 @@ altogether. They are not "sent" to GitHub until you "push" them.)
 
 -   Click on "Close"
 
--   Navigate to your repository main page to see the changes online
+-   Navigate to your repository to see the changes online
 :::
 
 ::: {.nonincremental .fragment}
@@ -668,16 +668,15 @@ altogether. They are not "sent" to GitHub until you "push" them.)
     repository. Also, at the end of a session it is best practice to "Push", so
     that we have a backup of the whole commit history in the cloud (i.e. GitHub)
 
--   Show how the repository now has a nice, personalized main page where the
-    "README.md" file has all the instructions for visitors to clone their
-    repository and understand what is its purpose.
+-   Show how the repository now shows the last commit in folder "src".
+
+-   Navigate to the folder to see the new file.
 
 (NEXT)
 
 -   In this case, the local repository is in sync with the remote, so it will
-    not make any new changes.
-
-(The "Pull" command is only shown for drilling and getting used to it)
+    not make any new changes. (The "Pull" command is only shown for drilling and
+    getting used to it)
 :::
 
 ## DOs and DON'Ts in git {.smaller}
@@ -852,6 +851,10 @@ shown with `normalizePath("~", winslash = '/')`
 
 -   Knit "README.md" (blue yarn above editor)
 
+-   Stage, write message, commit & push
+
+-   Navigate to your repository main page
+
 ::: notes
 We will create a "README" file for our new project. Information for "visitors"
 of your repository. Useful if you plan to make it public at some point. **Give
@@ -889,6 +892,12 @@ Press "knit" button to generate "README.md". This overwrites the template's own
 
 It has installation instructions and all the necessary information (e.g.,
 license file; a brief comment on licensing may be in place here).
+
+(NEXT)
+
+-   Show how the repository now has a nice, personalized main page where the
+    "README.md" file has all the instructions for visitors to clone their
+    repository and understand what is its purpose.
 :::
 
 ## Viewing your history
