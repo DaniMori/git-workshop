@@ -532,6 +532,70 @@ Optionally:
     last commit is lost.
 :::
 
+## Iterating our work
+
+::: nonincremental
+1.  Click on the "Commit" button in the "Git" tab of Rstudio
+
+2.  Stage files / chunks / selection of lines
+
+    -   **NEVER** click on discard chunk (\*)
+
+3.  Click on "staged / unstaged" to see the changes "ready to commit"
+
+4.  Write message in "Commit message" text box
+
+5.  Click on "Commit"
+:::
+
+::: aside
+\*: unless you are 100% sure
+:::
+
+::: notes
+**PURPOSE:** Create new commits (points in history) with our latest changes.
+
+2: Why "discard chunk" option...? Rstudio should drop this feature (IMO)
+
+3: Use the `SHIFT` key to select several lines (watch out with "selection", it
+does not always work if the computer is slow)
+
+4: When seeing the "staged" changes, notice how the "stage chunk" and "discard
+chunk" buttons change to "unstage chunk"
+
+5: Git does not allow "empty commmit messages"
+
+The Git tab has changed:
+
+-   The "added/deleted/modified files" are not shown anymore. This means that
+    the files are in the same state as the latest version recorded by git. Only
+    when we make new changes they will appear again in the git tab.
+
+-   A banner appears on top informing of "commits ahead of origin" (remote).
+    This means that our repository has changes that are not synchronized with
+    the remote (identified by "origin" here). This will be the next step we will
+    learn.
+:::
+
+## (More) git jargon
+
+<br>
+
+-   **Stage/add**: Mark changes for begin tracked
+
+<br>
+
+-   **Commit**: Create a new "point in the history"
+
+<br>
+
+-   **Revert**: Revert changes to a file (revert to last commit)
+
+::: notes
+If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
+(local) commit (**NOT RECOMMENDED** unless you have some experience)
+:::
+
 ## Using a dataset (I)
 
 <br>
@@ -608,70 +672,6 @@ shown with `normalizePath("~", winslash = '/')`
 -   NEVER use `setwd()` in your scripts
 
 -   Use `here::here()` instead
-:::
-
-## Iterating our work
-
-::: nonincremental
-1.  Click on the "Commit" button in the "Git" tab of Rstudio
-
-2.  Stage files / chunks / selection of lines
-
-    -   **NEVER** click on discard chunk (\*)
-
-3.  Click on "staged / unstaged" to see the changes "ready to commit"
-
-4.  Write message in "Commit message" text box
-
-5.  Click on "Commit"
-:::
-
-::: aside
-\*: unless you are 100% sure
-:::
-
-::: notes
-**PURPOSE:** Create new commits (points in history) with our latest changes.
-
-2: Why "discard chunk" option...? Rstudio should drop this feature (IMO)
-
-3: Use the `SHIFT` key to select several lines (watch out with "selection", it
-does not always work if the computer is slow)
-
-4: When seeing the "staged" changes, notice how the "stage chunk" and "discard
-chunk" buttons change to "unstage chunk"
-
-5: Git does not allow "empty commmit messages"
-
-The Git tab has changed:
-
--   The "added/deleted/modified files" are not shown anymore. This means that
-    the files are in the same state as the latest version recorded by git. Only
-    when we make new changes they will appear again in the git tab.
-
--   A banner appears on top informing of "commits ahead of origin" (remote).
-    This means that our repository has changes that are not synchronized with
-    the remote (identified by "origin" here). This will be the next step we will
-    learn.
-:::
-
-## (More) git jargon
-
-<br>
-
--   **Stage/add**: Mark changes for begin tracked
-
-<br>
-
--   **Commit**: Create a new "point in the history"
-
-<br>
-
--   **Revert**: Revert changes to a file (revert to last commit)
-
-::: notes
-If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
-(local) commit (**NOT RECOMMENDED** unless you have some experience)
 :::
 
 # The git workflow
