@@ -6,20 +6,26 @@ author:      |
   <table>
     <tr>
       <td>Daniel Morillo, Ph.D.</td>
-      <td>Cristina Rodríguez Prada</td>
+      <td>Cristina Rodríguez-Prada</td>
       <td>Jesus Sierralaya</td>      
     </tr>
     <tr>
       <td>
         <center>
-          [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
+          [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori)&emsp;
           [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
         </center>
       </td>
       <td>
         <center>
-          [![](../www/github-logo.png){height="50"}](https://github.com/kevolve/)&emsp;
-          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0002-0152-1452)
+          [![](../www/github-logo.png){height="50"}](https://github.com/Cristrinaranjus)&emsp;
+          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0002-9173-4741)
+        </center>
+      </td>
+      <td>
+        <center>
+          [![](../www/github-logo.png){height="50"}](https://github.com/JesusSierralaya)&emsp;
+          [![](../www/orcid.png){height="50"}](https://orcid.org/) <!-- TODO: Fill in Jesus' ORCID -->
         </center>
       </td>
     </tr>
@@ -33,9 +39,7 @@ institute:   |
       <td>
         [![](../www/SORTEE_logo.png){height="120"}](https://www.sortee.org/)
       </td>
-      <td>
-        [![](../www/UQlogo.png){height="50"}](https://www.uq.edu.au/)
-      </td>
+      <!-- TODO: Jesús and Cris institutional logos? -->
     </tr>
   </table>
 format:
