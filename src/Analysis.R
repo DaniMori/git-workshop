@@ -1,80 +1,84 @@
 ## ----packages----
+library(here)
 library(readr)
 library(dplyr)
 library(forcats)
 library(stringr)
 library(tidyr)
 library(labelled)
-# library(gtsummary) ## TODO: Install {gtsummary} if necessary
+# library(gtsummary) ## TODO: Un comment (& install {gtsummary} if necessary)
+library(survival)
+
+## ----config----
+
+# Set working directory to the project root (reprodubibly):
+here()
 
 ## ----main----
-
-## ----load-data----
 
 # Data preprocessing: ----
 
 ## Read dataset:
-penguins_data <- read_csv(
-  # TODO: Change "<dataset_filename>" by the name of your own dataset, if
-  #   necessary (e.g., "dat/penguins.csv")
-  file = "dat/<dataset_filename>.csv",
-  col_types = cols(
-    species  = col_factor(),
-    island   = col_factor(),
-    sex      = col_factor(),
-    year     = col_integer(),
-    .default = col_double()
+study_data <- read_csv(
+  "dat/breslow_chatterjee_1999.csv",
+  col_types      = cols(
+    instit       = col_factor(),
+    histol       = col_factor(),
+    stage        = col_factor(levels = as.character(1:4), ordered = TRUE),
+    study        = col_factor(),
+    in.subcohort = col_logical(),
+    .default     = col_integer()
   )
 )
 
-
-## ----preprocess-data----
-
 ## Recode values:
-penguins_data <- penguins_data |>
-  mutate(sex = sex |> fct_relabel(str_to_sentence))
+study_data <- study_data |> mutate(
+  instit = instit |>
+    factor(levels = 1:2, labels = c("Favourable", "Unfavourable")),
+  histol = histol |>
+    factor(levels = 1:2, labels = c("Favourable", "Unfavourable")),
+  stage  = stage  |>
+    factor(levels = 1:4, labels = c('I', 'II', 'III', 'IV'))
+)
 
 ## Assign labels:
-# (see https://allisonhorst.github.io/palmerpenguins/reference/penguins.html
+# (see https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco
 #   for more info):
-penguins_data <- penguins_data |> set_variable_labels(
-  species           = "Penguin species",
-  island            = "Island in Palmer Archipielago",
-  bill_length_mm    = "Bill length (mm)",
-  bill_depth_mm     = "Bill depth (mm)",
-  flipper_length_mm = "Flipper length (mm)",
-  body_mass_g       = "Body mass (g)",
-  sex               = "Sex",
-  year              = "Study year"
+study_data <- study_data |> set_variable_labels(
+  instit = "Histology (from local institution)",
+  histol = "Histology (from central lab)",
+  stage  = "Disease stage",
+  study  = "Study",
+  rel    = "Relapse", # As a 0/1 integer for compatibility with {survival}
+  edrel  = "Time to relapse (days)",
+  age    = "Age (months)"
+  ## TODO: Transform `edrel` and `age` to years?
 )
 
 
-## Filter out cases with missing data:
-penguins_data <- penguins_data |> drop_na()
+## Filter only cases in the example in Breslow & Chatterjee (1999):
+study_data <- study_data |>
+  filter(in.subcohort)   |>
+  select(-in.subcohort)
 
 
-## ----descriptives----
+# Descriptive analysis: ----
 
-## Simple summary:
-penguins_data |> summary()
+# NOTE: Descriptives not computed, as `gtsummary` package is too heavy
 
 ## Create descriptive statistics table:
-# descriptive_table <- penguins_data |> tbl_summary()
-# descriptive_table
-## TODO: Uncomment if using {gtsummary}
+## TODO: Uncomment next line if using {gtsummary}
+# descriptive_table <- study_data |> tbl_summary(include = -seqno)
 
-## Create contingency table of sex and species:
-# contingency_table <- penguins_data |> tbl_cross(row = sex, col = species)
-# contingency_table
-## TODO: Uncomment if using {gtsummary}
+## Create contingency table of the histologies:
+## TODO: Uncomment next line if using {ºgtsummary}
+# contingency_table <- study_data |> tbl_cross(row = instit, col = histol)
 
 
-## ----modeling----
+# Statistical modeling and inference: ----
 
-bodymass_fit <- lm(body_mass_g ~ sex * species, data = penguins_data)
-## TODO: Add covariates? Test model assumptions?
+survival_fit <- coxph(Surv(edrel, rel) ~ histol + instit, data = study_data)
+## TODO: Add covariates?
 
-# NOTE: Output table not created, as `gtsummary` package is too heavy
-# bodymass_coef_table <- bodymass_fit |> tbl_regression()
-# bodymass_coef_table
+# survival_coef_table <- survival_fit |> tbl_regression()
 ## TODO: Uncomment if using {gtsummary}
