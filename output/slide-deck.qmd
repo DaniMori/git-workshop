@@ -740,7 +740,7 @@ SHOULD NOT SPEND TOO MUCH TIME ON THIS
 <br>
 
 ::: nonincremental
--   Download <https://bit.ly/gitws-dataset>
+-   Download <https://bit.ly/gitws-data>
 
 OR
 
@@ -778,16 +778,22 @@ It can also be done in the terminal (but no need to learn the commands)
 ## Using a dataset (and II)
 
 ::: nonincremental
--   Change the file path in line 20 of "src/Analysis.R" to point to your
+-   Change the file path in line 23 of "src/Analysis.R" to point to your
     dataset:
 
-``` r
+``` {.r code-line-numbers="3"}
 ## Read dataset:
-penguins_data <- read_csv(
-  # TODO: Change "<dataset_filename>" by the name of your own dataset, if
-  #   necessary (e.g., "dat/penguins.csv")
-  file = "dat/<dataset_filename>.csv",
-  ...
+study_data <- read_csv(
+  "dat/breslow_chatterjee_1999.csv",
+  col_types      = cols(
+    instit       = col_factor(),
+    histol       = col_factor(),
+    stage        = col_factor(levels = as.character(1:4), ordered = TRUE),
+    study        = col_factor(),
+    in.subcohort = col_logical(),
+    .default     = col_integer()
+  )
+)
 ```
 
 -   Notice the "working directory" on top of the "Console" tab
