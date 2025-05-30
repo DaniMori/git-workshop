@@ -1,4 +1,12 @@
-## ----packages----
+---
+title: "Sample analysis"
+format: docx
+---
+
+```{r setup, include=FALSE}
+# Load packages:
+
+library(knitr)
 library(here)
 library(readr)
 library(dplyr)
@@ -9,15 +17,30 @@ library(labelled)
 # library(gtsummary) ## TODO: Un comment (& install {gtsummary} if necessary)
 library(survival)
 
-## ----config----
 
-# Set working directory to the project root (reprodubibly):
-here()
+# Environment configuration:
 
-## ----main----
+## Set working directory to the project root (reproducibly):
+opts_knit$set(root.dir = here())
 
-# Data preprocessing: ----
+# Set chunk options:
+opts_chunk$set(echo = FALSE) # Omit syntax from output
+```
 
+# Introduction
+
+We will replicate the data analysis in the [`nwtco` help
+page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco)
+of the R [{survival} package](https://cran.r-project.org/package=survival)
+v3.5-5.
+
+# Methods
+
+We load and preprocess the dataset, and then compute their descriptive
+statistics and the contingency table of the cancer histologies. Finally, we fit
+a Cox proportional hazards model to the data.
+
+```{r preprocess-data}
 ## Read dataset:
 study_data <- read_csv(
   "dat/breslow_chatterjee_1999.csv",
@@ -60,25 +83,30 @@ study_data <- study_data |> set_variable_labels(
 study_data <- study_data |>
   filter(in.subcohort)   |>
   select(-in.subcohort)
+```
 
-
-# Descriptive analysis: ----
-
-# NOTE: Descriptives not computed, as `gtsummary` package is too heavy
-
-## Create descriptive statistics table:
-## TODO: Uncomment next line if using {gtsummary}
-# descriptive_table <- study_data |> tbl_summary(include = -seqno)
-
-## Create contingency table of the histologies:
-## TODO: Uncomment next line if using {ºgtsummary}
-# contingency_table <- study_data |> tbl_cross(row = instit, col = histol)
-
-
-# Statistical modeling and inference: ----
-
+```{r model-fit}
 survival_fit <- coxph(Surv(edrel, rel) ~ histol + instit, data = study_data)
 ## TODO: Add covariates?
+```
 
-# survival_coef_table <- survival_fit |> tbl_regression()
-## TODO: Uncomment if using {gtsummary}
+# Results
+
+In the following we see the descriptive statistics and the contingency table.
+
+```{r descriptives-table}
+## TODO: Uncomment next line if using {gtsummary}
+# study_data |> tbl_summary(include = -seqno)
+```
+
+```{r contingency-table}
+## TODO: Uncomment next line if using {gtsummary}
+# study_data |> tbl_cross(row = instit, col = histol)
+```
+
+The next table shows the coefficients of the model.
+
+```{r model-output}
+## TODO: Uncomment next line if using {gtsummary}
+# survival_fit |> tbl_regression()
+```
