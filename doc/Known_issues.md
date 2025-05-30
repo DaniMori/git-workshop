@@ -40,58 +40,6 @@ The user is not logged in to GitHub (in that browser; see above).
 
 Log in again to GitHub in the browser they are using.
 
-## Pasting commands from Zoom to the R console does not work
-
-### Problem
-
-When pasting a command that contains a "literal" from Zoom to the R console, the
-command does not work.
-
-### Cause
-
-Zoom formats double quotes as "typographic double quotes", making the literal
-invalid.
-
-### Solution
-
-Edit the command manually to change the typographic double quotes by regular
-double quotes.
-
-## {pak} does not install
-
-### Problem
-
-{pak} does not install, but stays idle instead while trying to install.
-
-### Cause
-
-Unknown; it may be a connection issue.
-
-### Solution
-
-Deactivate {pak} before restoring the environment, then activate it again.
-
-Follow these steps to do so:
-
-1.  Open file ".Rprofile"
-
-2.  Comment out lines 1 and 5 (leave only line 3: `source("renv/activate.R")`)
-
-3.  Restart the R session (in the Rstudio menu "Session" -\> "Restart R")
-
-4.  Run `renv::restore(confirm = FALSE)`
-
-5.  Wait until the installation of the packages is finished
-
-6.  Revert file ".Rprofile" to its original content (i.e., uncomment lines 1 and
-
-    5)  
-
-7.  Restart the R session again
-
-(Please **note**: A participant that needs to do this will take longer than
-usual to restore de {renv} environment.)
-
 ## Knitting "README.Rmd" fails
 
 ### Problem
