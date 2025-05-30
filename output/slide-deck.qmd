@@ -72,11 +72,11 @@ knitr: true
 
 #### PARTICIPATE:
 
--   Use ✋ to speak up
+-   Raise ✋ to speak up
 
--   Use ✅ when ready to continue
+-   Use 🟥 if you need help
 
--   Use ❌ to ask for help
+-   Use 🟩 when ready to continue
 :::
 
 ::: notes
@@ -91,15 +91,11 @@ press `CTRL + click`. After clicking the link, direct attention to button
 
 <br>
 
--   If you're stuck, raise your hand
+-   Raise your hand if you're stuck
 
 <br>
 
--   Cristina and Jesus will assist you throughout the workshop
-
-::: notes
--   <!-- TODO: Notes about technical assistance? -->
-:::
+-   Cris and Jesus will assist you
 
 # git + GitHub: An overview
 
