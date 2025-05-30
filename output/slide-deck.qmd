@@ -459,24 +459,28 @@ git config --global user.email "DaniMori\@users.noreply.github.com"
 <br>
 
 ::: nonincremental
--   Download <https://bit.ly/gitws-rscript>
+-   Download <https://bit.ly/gitws-nb>
 
 OR
 
--   copy ***a script of you own***
+-   copy ***a notebook/script of you own***
 
-to the "src" folder of your local repository
+to your local repository
 :::
 
 -   Install necessary packages, then "renv" -\> "Snapshot Library..."
 
 ::: notes
+\[BEFORE:\]
+
 **NOTE**: To avoid opening the file link in the same tab as the presentation,
 press `CTRL + click`. After clicking the link, direct attention to button
 "Download raw file" in GitHub.
 
+\[SNAPSHOT LIBRARY:\]
+
 Install packages: The editor warns (in an upper banner) about missing packages
-when you open the script, and gives the option to install them.
+when you open the notebook, and gives the option to install them.
 
 Snapshot library: The new libraries will be added to the "renv.lock"
 :::
@@ -778,22 +782,18 @@ It can also be done in the terminal (but no need to learn the commands)
 ## Using a dataset (and II)
 
 ::: nonincremental
--   Change the file path in line 23 of "src/Analysis.R" to point to your
+-   Change the file path in line 48 of "notebook/Analysis.qmd" to point to your
     dataset:
 
-``` {.r code-line-numbers="3"}
+``` {.r code-line-numbers="5"}
 ## Read dataset:
 study_data <- read_csv(
-  "dat/breslow_chatterjee_1999.csv",
+  # TODO: Change "<dataset_filename>" by the name of your own dataset, e.g.:
+  #   file = "dat/breslow_chatterjee_1999.csv"
+  file = "dat/<dataset_filename>",
   col_types      = cols(
     instit       = col_factor(),
-    histol       = col_factor(),
-    stage        = col_factor(levels = as.character(1:4), ordered = TRUE),
-    study        = col_factor(),
-    in.subcohort = col_logical(),
-    .default     = col_integer()
-  )
-)
+...
 ```
 
 -   Notice the "working directory" on top of the "Console" tab
@@ -821,17 +821,28 @@ shown with `normalizePath("~", winslash = '/')`
 
 ## Making new commits
 
+::: nonincremental
+-   Solve & delete "TODO" comments in "notebookds/Analysis.qmd"
+
+OR
+
+-   Make changes to your own notebook/script
+:::
+
 <br>
 
--   Make sure your script runs without errors
-
-<br>
+-   Make sure your notebook/script runs without errors
 
 -   Commit changes
 
-<br>
-
 -   Maybe push your recent commits?
+
+::: notes
+\[TODO COMMENTS:\]
+
+{broom} & {broom.helpers} are required by {gtsummary} so they need to be
+installed, but they do not need to be loaded with `library()`.
+:::
 
 ## Making your repo "Reusable" {.smaller}
 

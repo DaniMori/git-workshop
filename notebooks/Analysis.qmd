@@ -14,7 +14,9 @@ library(forcats)
 library(stringr)
 library(tidyr)
 library(labelled)
-# library(gtsummary) ## TODO: Un comment (& install {gtsummary} if necessary)
+# library(gtsummary) # TODO: Uncomment (& install packages if using {gtsummary})
+# library(broom)
+# library(broom.helpers)
 library(survival)
 
 
@@ -43,7 +45,9 @@ a Cox proportional hazards model to the data.
 ```{r preprocess-data}
 ## Read dataset:
 study_data <- read_csv(
-  "dat/breslow_chatterjee_1999.csv",
+  # TODO: Change "<dataset_filename>" by the name of your own dataset, e.g.:
+  #   file = "dat/breslow_chatterjee_1999.csv"
+  file = "dat/<dataset_filename>",
   col_types      = cols(
     instit       = col_factor(),
     histol       = col_factor(),
