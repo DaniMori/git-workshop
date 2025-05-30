@@ -25,7 +25,7 @@ author:      |
       <td>
         <center>
           [![](../www/github-logo.png){height="50"}](https://github.com/JesusSierralaya)&emsp;
-          [![](../www/orcid.png){height="50"}](https://orcid.org/) <!-- TODO: Fill in Jesus' ORCID -->
+          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-0614-2467)
         </center>
       </td>
     </tr>
