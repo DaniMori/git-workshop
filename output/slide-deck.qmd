@@ -5,9 +5,9 @@ date-format: long
 author:      |
   <table>
     <tr>
-      <td>Daniel Morillo, Ph.D.</td>
-      <td>Cristina Rodríguez-Prada</td>
-      <td>Jesus Sierralaya</td>      
+      <td><center>Daniel Morillo, Ph.D.</center></td>
+      <td><center>Cristina Rodríguez-Prada</center></td>
+      <td><center>Jesus Sierralaya</center></td>
     </tr>
     <tr>
       <td>
