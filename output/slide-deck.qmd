@@ -1,24 +1,31 @@
 ---
 title:       "Version control with git + GitHub for scientific workflows"
-date:        2024-10-15
+date:        2025-06-26
 date-format: long
 author:      |
   <table>
     <tr>
-      <td>Daniel Morillo, Ph.D.</td>
-      <td>Kevin Bairos-Novak</td>
+      <td><center>Daniel Morillo, Ph.D.</center></td>
+      <td><center>Cristina Rodríguez-Prada</center></td>
+      <td><center>Jesus Sierralaya</center></td>
     </tr>
     <tr>
       <td>
         <center>
-          [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
+          [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori)&emsp;
           [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
         </center>
       </td>
       <td>
         <center>
-          [![](../www/github-logo.png){height="50"}](https://github.com/kevolve/)&emsp;
-          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0002-0152-1452)
+          [![](../www/github-logo.png){height="50"}](https://github.com/Cristrinaranjus)&emsp;
+          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0002-9173-4741)
+        </center>
+      </td>
+      <td>
+        <center>
+          [![](../www/github-logo.png){height="50"}](https://github.com/JesusSierralaya)&emsp;
+          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-0614-2467)
         </center>
       </td>
     </tr>
@@ -26,15 +33,16 @@ author:      |
 institute:   |
   <table>
     <tr>
+      <td>
+        [![](../www/SIPS_logo.png){height="100"}](https://improvingpsych.org/)
+      </td>
       <td style="width: 150px">
-        [![](../www/UNED_logo.JPG){height="55"}](https://www.uned.es/universidad/inicio/en/)
+        [![](../www/UNED_logo.JPG){height="100"}](https://www.uned.es/universidad/inicio/en/)
       </td>
       <td>
-        [![](../www/SORTEE_logo.png){height="120"}](https://www.sortee.org/)
+        [![](../www/CUCC_logo.png){height="100"}](https://www.cardenalcisneros.es/)
       </td>
-      <td>
-        [![](../www/UQlogo.png){height="50"}](https://www.uq.edu.au/)
-      </td>
+      <!-- TODO: Cris institutional logo? -->
     </tr>
   </table>
 format:
@@ -58,21 +66,25 @@ knitr: true
 
 ## Setup
 
-::: nonincremental
+<br>
+
+:::: nonincremental
 #### FOLLOW LOCALLY:
 
 -   <https://osf.io/um53b>
 
 <br>
 
+::: fragment
 #### PARTICIPATE:
 
--   Use ✋ to speak up
+-   Raise ✋ to speak up
 
--   Use ✅ when ready to continue
+-   Use 🟥 if you need help
 
--   Use ❌ to ask for help
+-   Use 🟩 when ready to continue
 :::
+::::
 
 ::: notes
 -   Follow presentation, useful for copy-pasting (tested in Chrome)
@@ -80,25 +92,6 @@ knitr: true
 **NOTE**: To avoid opening the file link in the same tab as the presentation,
 press `CTRL + click`. After clicking the link, direct attention to button
 "Download raw file"
-:::
-
-## Get help
-
-<br>
-
--   Paste the error message to the chat
-
-<br>
-
--   Kevin will help you out over chat
-
-<br>
-
--   As a last resort, Kevin will take you to a private breakout room to discuss
-    and try to resolve computer issues
-
-::: notes
--   <!-- TODO: Notes about technical assistance? -->
 :::
 
 # git + GitHub: An overview
