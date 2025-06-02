@@ -33,13 +33,16 @@ author:      |
 institute:   |
   <table>
     <tr>
+      <td>
+        [![](../www/SIPS_logo.png){height="100"}](https://improvingpsych.org/)
+      </td>
       <td style="width: 150px">
-        [![](../www/UNED_logo.JPG){height="55"}](https://www.uned.es/universidad/inicio/en/)
+        [![](../www/UNED_logo.JPG){height="100"}](https://www.uned.es/universidad/inicio/en/)
       </td>
       <td>
-        [![](../www/SIPS_logo.png){height="120"}](https://improvingpsych.org/)
+        [![](../www/CUCC_logo.png){height="100"}](https://www.cardenalcisneros.es/)
       </td>
-      <!-- TODO: Jesús and Cris institutional logos? -->
+      <!-- TODO: Cris institutional logo? -->
     </tr>
   </table>
 format:
