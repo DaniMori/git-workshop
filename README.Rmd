@@ -40,17 +40,26 @@ by [Daniel Morillo][profile] and licensed under the
 
 [profile]: https://github.com/DaniMori
 
-### Dataset ["dat/penguins.csv"][ds]
+### Dataset ["dat/breslow_chatterjee_1999.csv"][ds]
 
-[ds]: dat/penguins.csv
+[ds]: dat/breslow_chatterjee_1999.csv
 
-Dataset `penguins` from the R [{palmerpenguins} package][palmerpenguins]
-v0.1.1, originally from:
+Dataset `nwtco` from the R [{survival} package][survival]
+v3.5-5, originally from:
 
-[palmerpenguins]: https://cran.r-project.org/package=palmerpenguins
+[survival]: https://cran.r-project.org/package=survival
 
 ::: {#refs}
 :::
+
+### Script ["src/Analysis.R"][script]
+
+[script]: src/Analysis.R
+
+Adapted from the [`nwtco` help page][nwtco] of the R
+[{survival} package][survival] v3.5-5.
+
+[nwtco]: https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco
 
 ### Pictures
 

@@ -22,15 +22,32 @@ template created by [Daniel Morillo](https://github.com/DaniMori) and
 licensed under the [Creative Commons Attribution 4.0 International
 license](https://creativecommons.org/licenses/by/4.0/).
 
-### Dataset [“dat/penguins.csv”](dat/penguins.csv)
+### Dataset [“dat/breslow_chatterjee_1999.csv”](dat/breslow_chatterjee_1999.csv)
 
-Dataset `penguins` from the R [{palmerpenguins}
-package](https://cran.r-project.org/package=palmerpenguins) v0.1.1,
-originally from:
+Dataset `nwtco` from the R [{survival}
+package](https://cran.r-project.org/package=survival) v3.5-5, originally
+from:
 
-<div id="refs">
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
+
+<div id="ref-breslow_design_1999" class="csl-entry">
+
+Breslow, N. E., and N. Chatterjee. 1999. “Design and Analysis of
+Two-Phase Studies with Binary Outcome Applied to Wilms Tumour
+Prognosis.” *Journal of the Royal Statistical Society: Series C (Applied
+Statistics)* 48 (4): 457–68. <https://doi.org/10.1111/1467-9876.00165>.
 
 </div>
+
+</div>
+
+### Script [“src/Analysis.R”](src/Analysis.R)
+
+Adapted from the [`nwtco` help
+page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco)
+of the R [{survival}
+package](https://cran.r-project.org/package=survival) v3.5-5.
 
 ### Pictures
 
@@ -44,33 +61,33 @@ Origin of all the image files attributed in the corresponding slides in
 Start by installing the following software components:
 
 - [R version
-  4.4.2](https://cran.rstudio.com/bin/windows/base/old/4.4.2/): In
+  4.5.0](https://cran.rstudio.com/bin/windows/base/old/4.5.0/): In
   Windows, using the [binary
-  installer](https://cran.rstudio.com/bin/windows/base/old/4.4.2/R-4.4.2-win.exe)
+  installer](https://cran.rstudio.com/bin/windows/base/old/4.5.0/R-4.5.0-win.exe)
   is recommended.
 
 <!-- -->
 
 - [Rstudio Desktop](https://posit.co/download/rstudio-desktop/):
   Although not strictly necessary, it is recommended to install the
-  Rstudio IDE; for strict reproducibility, use build [2024.12.0+467 for
+  Rstudio IDE; for strict reproducibility, use build [2025.05.0+496 for
   Windows
-  10/11](https://download1.rstudio.org/electron/windows/RStudio-2024.12.0-467.exe).
+  10/11](https://download1.rstudio.org/electron/windows/RStudio-2025.05.0-496.exe).
 
 <!-- -->
 
 - [Quarto publishing system](https://quarto.org/): An additional
   component used by Rstudio to generate and publish literate computing
-  outputs. For strict reproducibility please use build 1.5.57; On
+  outputs. For strict reproducibility please use build 1.6.42; On
   Windows, use [the 64-bit
-  installer](https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.57/quarto-1.5.57-win.msi).
+  installer](https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-win.msi).
 
 <!-- -->
 
 - [Git client](https://git-scm.com/download): Install the Git client in
   order to be able to clone locally the project repository. On Windows,
   use [the 64-bit Windows
-  installer](https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe).
+  installer](https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe).
 
 ## Installing the project locally
 
