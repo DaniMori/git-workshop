@@ -71,7 +71,7 @@ knitr: true
 :::: nonincremental
 #### FOLLOW LOCALLY:
 
--   <https://osf.io/um53b>
+-   <https://osf.io/5q9w8>
 
 <br>
 
@@ -87,11 +87,13 @@ knitr: true
 ::::
 
 ::: notes
+\[FOLLOW LOCALLY:\]
+
 -   Follow presentation, useful for copy-pasting (tested in Chrome)
 
-**NOTE**: To avoid opening the file link in the same tab as the presentation,
-press `CTRL + click`. After clicking the link, direct attention to button
-"Download raw file"
+-   To avoid opening the file link in the same tab as the presentation, press
+    `CTRL + click`. After clicking the link, direct attention to button
+    "Download raw file"
 :::
 
 # git + GitHub: An overview
@@ -191,6 +193,12 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
 project (analysis, paper, thesis, or a wider project).
 
 Depending on your settings you may be required a 2-factor authentication method
+
+\[1:\]
+
+-   Open it in **default browser** preferably, or the one you used for opening
+    the presentation (i.e., make sure the links open in the same browser where
+    you are signed in to GitHub)
 
 The template will add some useful pre-cooked features to the new repository
 :::
@@ -1089,3 +1097,4 @@ Save hours of lifetime with shortcuts (\*):
 -   [Pro Git, 2nd edition](https://git-scm.com/book/en/v2), by Scott Chacon and
     Ben Straub
 :::
+
