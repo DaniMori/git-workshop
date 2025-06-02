@@ -234,6 +234,9 @@ of whitespaces)
 
 Description must be "short" and direct
 
+If they are using their own project, better suggest that they choose their own
+name and description.
+
 \[6:\]
 
 -   Public: Anyone can see it, even without signing in to GitHub
