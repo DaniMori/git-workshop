@@ -505,9 +505,14 @@ Avoid compatibility issues with line endings in Windows.
 Pay attention to section "global".
 :::
 
-# Let's make some changes {.smaller}
+# Let's make some changes
 
-<!-- # TODO: Add section main page icon? -->
+![](../www/edit-code.png){fig-align="center" height="250"}
+
+::: aside
+"Edit code" icon from [Flaticon, created by Yogi
+Aprelliyanto](https://www.flaticon.com/free-icons/edit-code)
+:::
 
 ## Adding new files
 
