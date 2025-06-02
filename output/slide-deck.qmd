@@ -398,35 +398,44 @@ one for our project.
 "renv.lock" is the "R environment" file
 :::
 
-## R environment
+## R environment (I)
+
+<br>
 
 "renv.lock" file:
 
 ```{embed}
 #| file:   ../renv.lock
-#| block-height: 100
 ```
 
-::: {.fragment .nonincremental}
-Update the environment:
-
-1.  Go to the "Packages" tab in Rstudio
-:::
-
-2.  Click on "renv" -\> "Restore library..."
-
-3.  Click on "Restore"
-
 ::: notes
-\[BEFORE:\]
-
 Notice {renv} messages in the console. Explain that what it means:
 Inizialization of {renv}, a system to make the "environment" (packages &
 versions) reproducible.
 
 After the repository is cloned, we have to tell it to "install" all the packages
 of the environment.
+:::
 
+## R environment (and II)
+
+<br>
+
+::: nonincremental
+Update the environment:
+
+1.  Go to the "Packages" tab in Rstudio
+:::
+
+<br>
+
+2.  Click on "renv" -\> "Restore library..."
+
+<br>
+
+3.  Click on "Restore"
+
+::: notes
 \[2:\]
 
 Notice that there is a new "drop down" menu, "renv", in the "Packages" tab.
