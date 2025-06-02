@@ -238,7 +238,7 @@ Description must be "short" and direct
 
 -   Public: Anyone can see it, even without signing in to GitHub
 
--   Private: Only collaborators (we will add them later on)
+-   Private: Only collaborators
 
 \[7:\]
 
