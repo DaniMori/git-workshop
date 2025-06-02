@@ -207,7 +207,9 @@ Depending on your settings you may be required a 2-factor authentication method
 The template will add some useful pre-cooked features to the new repository
 :::
 
-## Create a repository (and II)
+## Create a repository (and II) {.smaller}
+
+<br>
 
 ::: nonincremental
 5.  Fill in "Repository name" and "Description" with:
@@ -219,11 +221,19 @@ The template will add some useful pre-cooked features to the new repository
 
     use ***a project name and description of your choice***
 
-6.  Choose "Private" visibility
+6.  Choose "Private" visibility (\*)
 
 7.  Leave "Include all branches" unselected
 
 8.  Click on "Create repository from template"
+:::
+
+::: aside
+\*: You can [add
+collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+or [make your repository
+public](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility?versionId=free-pro-team%40latest&productId=account-and-profile&restPage=setting-up-and-managing-your-personal-account-on-github%2Cmanaging-access-to-your-personal-repositories%2Cinviting-collaborators-to-a-personal-repository#making-a-repository-public)
+later on
 :::
 
 ::: notes
