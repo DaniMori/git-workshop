@@ -66,13 +66,16 @@ knitr: true
 
 ## Setup
 
-::: nonincremental
+<br>
+
+:::: nonincremental
 #### FOLLOW LOCALLY:
 
 -   <https://osf.io/um53b>
 
 <br>
 
+::: fragment
 #### PARTICIPATE:
 
 -   Raise ✋ to speak up
@@ -81,6 +84,7 @@ knitr: true
 
 -   Use 🟩 when ready to continue
 :::
+::::
 
 ::: notes
 -   Follow presentation, useful for copy-pasting (tested in Chrome)
