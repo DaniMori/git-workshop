@@ -71,7 +71,7 @@ knitr: true
 :::: nonincremental
 #### FOLLOW LOCALLY:
 
--   <https://osf.io/um53b>
+-   <https://osf.io/5q9w8>
 
 <br>
 
@@ -91,9 +91,9 @@ knitr: true
 
 -   Follow presentation, useful for copy-pasting (tested in Chrome)
 
-**NOTE**: To avoid opening the file link in the same tab as the presentation,
-press `CTRL + click`. After clicking the link, direct attention to button
-"Download raw file"
+-   To avoid opening the file link in the same tab as the presentation, press
+    `CTRL + click`. After clicking the link, direct attention to button
+    "Download raw file"
 :::
 
 # git + GitHub: An overview
@@ -197,6 +197,10 @@ project (analysis, paper, thesis, or a wider project).
 \[1:\]
 
 Depending on your settings you may be required a 2-factor authentication method
+
+-   Open it in **default browser** preferably, or the one you used for opening
+    the presentation (i.e., make sure the links open in the same browser where
+    you are signed in to GitHub)
 
 \[3:\]
 
@@ -1156,3 +1160,4 @@ Save hours of lifetime with shortcuts (\*):
 -   [Pro Git, 2nd edition](https://git-scm.com/book/en/v2), by Scott Chacon and
     Ben Straub
 :::
+
