@@ -90,16 +90,6 @@ press `CTRL + click`. After clicking the link, direct attention to button
 "Download raw file"
 :::
 
-## Get help
-
-<br>
-
--   Raise your hand if you're stuck
-
-<br>
-
--   Cris and Jesus will assist you
-
 # git + GitHub: An overview
 
 ![](../www/git-github.jpeg){fig-align="center" height="350"}
