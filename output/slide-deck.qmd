@@ -41,7 +41,7 @@ format:
   revealjs:
     auto-stretch:            true
     code-annotations:        hover
-    code-block-height:       220px
+    code-block-height:       400px
     fig-cap-location:        bottom
     incremental:             true
     link-external-newwindow: true
@@ -401,53 +401,59 @@ R packages; other stuff e.g. LaTeX packages, TeX engine... are not versioned by
 {renv}.
 :::
 
-## Setting up git (\*) {.smaller}
+## Setting up git (\*)
 
 Before starting to use version control...
 
-1.  Go to the "Terminal" tab in Rstudio
+::: {.fragment .nonincremental}
+Run in the console:
 
-:::: {.fragment .nonincremental}
-2.  Type in:
+``` {.r code-line-numbers="1-2|5-6|10-11|13-14"}
+# Set a user name globally:
+git2r::config(user.name = "<UserName>", global = TRUE)
+# example: git2r::config(user.name = "DaniMori", global = TRUE)
 
-``` {.bash code-line-numbers="1-2|4-5|7-8|10-11"}
-# set a user name globally
-git config --global user.name "User name"
+# Set an email address globally:
+git2r::config(user.name = "<UserName>@users.noreply.github.com", global = TRUE)
+# example:
+# git2r::config(user.name = "DaniMori@users.noreply.github.com", global = TRUE)
 
-# set an email address globally
-git config --global user.email "GitHubUser@users.noreply.github.com"
+# (Only for Windows users) Configure line ending:
+git2r::config(core.autocrlf = "true", global = TRUE)
 
-# for Windows users
-git config --global core.autocrlf true
-
-# check that everything's ok
-git config --list --global
+# Check that everything's ok:
+git2r::config()
 ```
-
-::: callout-tip
-Paste in terminal with `Shift-Insert`.
 :::
-::::
 
 ::: aside
 \*: You will only have to do this once (by computer)
 :::
 
 ::: notes
-The one and only time that we will open the Terminal. Why doesn't Rstudio
-provide GUI functionality for this? I don't know...
+\[USER NAME\]:
 
-Mind the double quotes; type in your name or (preferably) GitHub user name. This
-is what will appear in your repo "history" when you "commit" or create versions,
-e.g.:
+Mind the double quotes, but DO NOT type in the carets; type in your name or
+(preferably) GitHub user name. This is what will appear in your repo "history"
+when you "commit" or create versions, e.g.:
 
 `git config --global user.name "DaniMori"`
+
+\[EMAIL\]:
 
 Type in your email (also mind the double quotes). Better use "User name" at
 "users.noreply.github.com" (for obfuscating actual email from public exposure),
 e.g.:
 
-git config --global user.email "DaniMori\@users.noreply.github.com"
+`git config --global user.email "DaniMori@users.noreply.github.com"`
+
+\[AUTO CRLF\]:
+
+Avoid compatibility issues with line endings in Windows.
+
+\[CHECKIN CONFIGURATION\]:
+
+Pay attention to section "global".
 :::
 
 # Let's make some changes {.smaller}
