@@ -18,7 +18,7 @@ Sierralaya
 🎯 **Bring your project** or start fresh with a given example—gain hands-on skills for transparent,
 open science!
 
-📣 **Don’t miss out**—level up your research game! ✨
+📣 **Don’t miss out**—level up your reproducibiliy game! ✨
 
 🔗 Learn more & register:
 
