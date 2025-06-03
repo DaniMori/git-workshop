@@ -15,7 +15,7 @@ Users**
 👩💻 **Instructors:** Daniel Morillo, Cristina Rodríguez-Prada & Jesús
 Sierralaya
 
-🎯 **Bring your project** or start fresh—gain hands-on skills for transparent,
+🎯 **Bring your project** or start fresh with a given example—gain hands-on skills for transparent,
 open science!
 
 📣 **Don’t miss out**—level up your research game! ✨
