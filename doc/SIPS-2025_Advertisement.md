@@ -1,7 +1,7 @@
-🚀 **Join us at SIPS2025!** 🌟
-
 👉 **WS5: Reproducible Research & Collaboration in Git + GitHub for RStudio
 Users**
+
+🚀 **Join us at SIPS 2025!** 🌟
 
 📅 June 26, 2025 \| ⏰ 11:00 AM–12:30 PM CET (Budapest)
 
