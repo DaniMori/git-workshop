@@ -8,7 +8,7 @@ bibliography: "www/dataset_ref.bib"
 nocite: '@breslow_design_1999'
 ---
 
-# Respository `sortee-git-workshop`
+# Repository `git-workshop`
 
 Workshop "Reproducible research and collaboration in git and GitHub for Rstudio users"
 
@@ -179,20 +179,21 @@ renv::restore(confirm = FALSE)
 The file structure of this repository is as follows:
 
 ```
-sortee-git-workshop
+git-workshop
 |
-|--- dat          (To store input datasets; must NEVER be checked-in to Github)
+|--- dat          (Contains a sample dataset for the workshop; must NEVER be
+|                 checked-in to Github)
 |
 |--- doc          (To store important documentation of the project)
 |    |
 |    |--- minutes (To store meeting minutes)
 |
+|--- notebooks    (Contains sample exercise notebooks for the workshop)
+|
 |--- output       (Processing outputs; files must be individually "checked-in"
 |                 when necessary)
 |
 |--- renv         (System library necesssary for `renv` to work. DON'T TOUCH)
-|
-|--- src          (Source scripts that implement the main processes)
 |
 |--- www          (Project assets, e.g., images, bibliography files, etc.)
 ```
@@ -246,11 +247,11 @@ Follow these steps to do so:
 1. Render file "output/slide-deck.qmd".
 
 2. Host output "output/slide-deck.html" (the audience version) in a cloud
-   storage service (e.g., Dropbox, OneDrive, etc.).
+   storage service (e.g., OSF, Dropbox, OneDrive, etc.).
 
 3. Create a public link to share the audience version publicly.
 
-4. Update slide "Setup" with your own link (in line 65).
+4. Update slide "Setup" with your own link (in line 74).
 
 5. Render "output/slide-deck.qmd" again.
 
