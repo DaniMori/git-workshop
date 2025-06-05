@@ -36,11 +36,11 @@ institute:   |
       <td>
         [![](../www/SIPS_logo.png){height="100"}](https://improvingpsych.org/)
       </td>
-      <td style="width: 150px">
+      <td style="width: 130px">
         [![](../www/UNED_logo.JPG){height="100"}](https://www.uned.es/universidad/inicio/en/)
       </td>
-      <td> 
-       [![](../www/UAM_logo.png){height="100"}](https://www.uam.es/ssdlv/Satellite?c=Page&cid=1606994044433&pagename=UAM-R%2FPage%2FBASE_Portada)
+      <td style="width: 120px"> 
+       [![](../www/UAM_logo.png){height="50" style="padding-bottom: 30px"}](https://www.uam.es/ssdlv/Satellite?c=Page&cid=1606994044433&pagename=UAM-R%2FPage%2FBASE_Portada)
       </td>
       <td>
         [![](../www/CUCC_logo.png){height="100"}](https://www.cardenalcisneros.es/)
