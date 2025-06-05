@@ -9,8 +9,8 @@ Users**
 
 -   🗂️ **Create a GitHub repo** from scratch
 -   💻 **Clone it in RStudio** and track every change
--   🔄 **Adopt best practices** for version-controlled workflows
--   🤝 **Collaborate seamlessly** with peers, no matter your internet speed
+-   🔄 **Adopt best practices** for version control in Git
+-   🤝 **Make your work reproducible** for your peers to reuse
 
 👩💻 **Instructors:** Daniel Morillo, Cristina Rodríguez-Prada & Jesús
 Sierralaya
