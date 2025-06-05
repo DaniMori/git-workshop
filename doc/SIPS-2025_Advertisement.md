@@ -11,12 +11,12 @@ Users**
 -   💻 **Clone it in RStudio** and track every change
 -   🔄 **Adopt best practices** for version control in Git
 -   🤝 **Make your work reproducible** for your peers to reuse
+-   🛠️ **Gain hands-on skills** for transparent, open science
 
 👩💻 **Instructors:** Daniel Morillo, Cristina Rodríguez-Prada & Jesús
 Sierralaya
 
-🎯 **Bring your project** or start fresh with a given example—gain hands-on
-skills for transparent, open science!
+🎯 Start fresh with a given example or **Bring your own project**!
 
 📣 **Don’t miss out**—level up your reproducibiliy game! ✨
 
