@@ -22,5 +22,5 @@ skills for transparent, open science!
 
 🔗 Learn more & register:
 
--   OSF: **SIPS2025 OSF Page**: <https://osf.io/xmjen/>
+-   Landing page: <https://osf.io/xmjen/>
 -   Sign up!: <https://forms.gle/3mUf7mLTHoXgqX51A>
