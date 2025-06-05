@@ -1,7 +1,7 @@
 👉 **WS5: Reproducible Research & Collaboration in Git + GitHub for RStudio
 Users**
 
-🚀 **Join us at SIPS 2025!** 🌟
+🚀 [**Join us at SIPS 2025!**](https://forms.gle/3mUf7mLTHoXgqX51A) 🌟
 
 📅 June 26, 2025 \| ⏰ 11:00 AM–12:30 PM CET (Budapest)
 
@@ -15,8 +15,8 @@ Users**
 👩💻 **Instructors:** Daniel Morillo, Cristina Rodríguez-Prada & Jesús
 Sierralaya
 
-🎯 **Bring your project** or start fresh with a given example—gain hands-on skills for transparent,
-open science!
+🎯 **Bring your project** or start fresh with a given example—gain hands-on
+skills for transparent, open science!
 
 📣 **Don’t miss out**—level up your reproducibiliy game! ✨
 
