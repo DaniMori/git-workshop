@@ -22,5 +22,7 @@ Sierralaya
 
 🔗 Learn more & register:
 
--   Landing page: <https://osf.io/xmjen/>
+-   Landing page:
+    <https://docs.google.com/document/d/1otQq3B6d2tUWNKw6AxodJdNAJk3s5Nb->
 -   Sign up!: <https://forms.gle/3mUf7mLTHoXgqX51A>
+
