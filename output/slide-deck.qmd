@@ -721,6 +721,33 @@ If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
 (local) commit (**NOT RECOMMENDED** unless you have some experience)
 :::
 
+## Viewing your history
+
+<br>
+
+-   Click on "History" in the "Git" tab
+
+-   What do the different columns mean?
+
+-   See the detailed changes in a file
+
+-   Click on "View file" in a previous commit
+
+-   Recover file / lines if necessary
+
+::: notes
+Give word to @DaniMori
+
+\[VIEW FILE:\]
+
+**NOTE**: The only available file with changes, at this point, will be
+"renv.lock" (not very "meaningful" changes).
+
+We can "manually revert" changes in a commit by restoring a previous version of
+the file, or "copying" what we want to recover and pasting it in the current
+version in our file system.
+:::
+
 # The git workflow
 
 ![](../www/git-commands.png){fig-align="center" height="520"}
@@ -731,8 +758,6 @@ Mahugh](https://www.dougmahugh.com/envisioning-github/)
 :::
 
 ::: notes
-Give word to @DaniMori
-
 (Optionally) Use the "Post office" metaphor to explain:
 
 -   Stage: Pack products (changes) to send (you can "pack" several files or
@@ -1059,28 +1084,6 @@ license file; a brief comment on licensing may be in place here).
 -   Show how the repository now has a nice, personalized main page where the
     "README.md" file has all the instructions for visitors to clone their
     repository and understand what is its purpose.
-:::
-
-## Viewing your history
-
-<br>
-
--   Click on "History" in the "Git" tab
-
--   What do the different columns mean?
-
--   See the detailed changes in a file
-
--   Click on "View file" in a previous commit
-
--   Recover file / lines if necessary
-
-::: notes
-\[VIEW FILE:\]
-
-We can "manually revert" changes in a commit by restoring a previous version of
-the file, or "copying" what we want to recover and pasting it in the current
-version in our file system.
 :::
 
 # Wrapping up
