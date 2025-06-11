@@ -636,21 +636,25 @@ Optionally:
 Give word to @JesusSierralaya
 :::
 
-## Iterating our work
+## Iterating our work {.smaller}
 
-::: nonincremental
+<br>
+
+:::: nonincremental
 1.  Click on the "Commit" button in the "Git" tab of Rstudio
 
 2.  Stage files / chunks / selection of lines
 
-    -   **NEVER** click on discard chunk (\*)
+::: callout-warning
+**NEVER** click on discard chunk (\*)
+:::
 
 3.  Click on "staged / unstaged" to see the changes "ready to commit"
 
 4.  Write message in "Commit message" text box
 
 5.  Click on "Commit"
-:::
+::::
 
 ::: aside
 \*: unless you are 100% sure
