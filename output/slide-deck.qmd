@@ -671,8 +671,13 @@ Why "discard chunk" option...? Rstudio should drop this feature (IMO)
 
 \[3:\]
 
-Use the `SHIFT` key to select several lines (watch out with "selection", it does
-not always work if the computer is slow)
+**DO NOT READ**: (The following note, and "staging" individual lines/chunks in
+general, is very advanced; this part is intended only to guide co-facilitators
+in helping some attendees if they demonstrate very high skills with
+staging/unstaging, AND VC in general.)
+
+-   Use the `SHIFT` key to select several lines (watch out with "selection", it
+    does not always work if the computer is slow)
 
 \[4:\]
 
