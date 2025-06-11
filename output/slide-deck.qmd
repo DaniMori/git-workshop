@@ -180,6 +180,10 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
 \@ [Perl.com](https://www.perl.com/)
 :::
 
+::: note
+Give word to @Cristrinaranjus
+:::
+
 ## Create a repository (I)
 
 <br>
@@ -360,6 +364,10 @@ while...)
 \[9:\]
 
 Signing-in: Necessary because the repository is "private"
+
+\[AFTER:\]
+
+Give word to @DaniMori
 :::
 
 ## Explore your local repo
@@ -605,6 +613,10 @@ Optionally:
 
 -   If you "revert" the changes in a non-committed file, all the work since the
     last commit is lost.
+
+\[AFTER REVERTING:\]
+
+Give word to @JesusSierralaya
 :::
 
 ## Iterating our work
@@ -693,6 +705,8 @@ Mahugh](https://www.dougmahugh.com/envisioning-github/)
 :::
 
 ::: notes
+Give word to @DaniMori
+
 (Optionally) Use the "Post office" metaphor to explain:
 
 -   Stage: Pack products (changes) to send (you can "pack" several files or
