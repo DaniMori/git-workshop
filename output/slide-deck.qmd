@@ -738,10 +738,12 @@ If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
 ::: notes
 Give word to @DaniMori
 
-\[VIEW FILE:\]
+\[SEE DETAILED CHANGES:\]
 
-**NOTE**: The only available file with changes, at this point, will be
-"renv.lock" (not very "meaningful" changes).
+(The only available file with changes, at this point, will be "renv.lock"; not
+very "meaningful" changes.)
+
+\[VIEW FILE:\]
 
 We can "manually revert" changes in a commit by restoring a previous version of
 the file, or "copying" what we want to recover and pasting it in the current
