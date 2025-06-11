@@ -375,9 +375,9 @@ Give word to @DaniMori
 
 ## Explore your local repo
 
--   ".git": Home of your git repository
-
 -   Folders
+
+-   ".git": Home of your git repository
 
 ::: {.fragment .nonincremental}
 -   Files:
