@@ -64,6 +64,9 @@ format:
     template-partials:
       - ../www/title-slide.html
 knitr: true
+editor:
+  markdown: 
+    wrap: 80
 ---
 
 ## Setup
@@ -874,16 +877,16 @@ It can also be done in the terminal (but no need to learn the commands)
 ## Using a dataset (and II)
 
 ::: nonincremental
--   Change the file path in line 48 of "notebook/Analysis.qmd" to point to your
+-   Change the file path in line 46 of "notebook/Analysis.qmd" to point to your
     dataset:
 
 ``` {.r code-line-numbers="5"}
 ## Read dataset:
 study_data <- read_csv(
   # TODO: Change "<dataset_filename>" by the name of your own dataset, e.g.:
-  #   file = "dat/breslow_chatterjee_1999.csv"
+  # file = "dat/breslow_chatterjee_1999.csv",
   file = "dat/<dataset_filename>",
-  col_types      = cols(
+  col_types = cols(
     instit       = col_factor(),
 ...
 ```
@@ -1189,4 +1192,3 @@ Save hours of lifetime with shortcuts (\*):
 -   [Pro Git, 2nd edition](https://git-scm.com/book/en/v2), by Scott Chacon and
     Ben Straub
 :::
-

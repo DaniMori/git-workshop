@@ -31,16 +31,12 @@ opts_chunk$set(echo = FALSE) # Omit syntax from output
 
 # Introduction
 
-We will replicate the data analysis in the [`nwtco` help
-page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco)
-of the R [{survival} package](https://cran.r-project.org/package=survival)
-v3.5-5.
+We will replicate the data analysis in the [`nwtco` help page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco) of the R [{survival} package](https://cran.r-project.org/package=survival) v3.5-5.
 
 # Methods
 
-We load and preprocess the dataset, and then compute their descriptive
-statistics and the contingency table of the cancer histologies. Finally, we fit
-a Cox proportional hazards model to the data.
+We load and preprocess the dataset, and then compute their descriptive statistics and the contingency table of the cancer histologies.
+Finally, we fit a Cox proportional hazards model to the data.
 
 ```{r preprocess-data}
 ## Read dataset:
@@ -48,7 +44,7 @@ study_data <- read_csv(
   # TODO: Change "<dataset_filename>" by the name of your own dataset, e.g.:
   # file = "dat/breslow_chatterjee_1999.csv",
   file = "dat/<dataset_filename>",
-  col_types      = cols(
+  col_types = cols(
     instit       = col_factor(),
     histol       = col_factor(),
     stage        = col_factor(levels = as.character(1:4), ordered = TRUE),
