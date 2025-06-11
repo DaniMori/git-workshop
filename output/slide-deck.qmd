@@ -345,9 +345,12 @@ Note that Rstudio fills in the folder name for you automatically; you don't need
 to create a new folder to "nest" your repository into it, it will create it
 automatically. If it already exists and is not empty, it will give you an error
 and won't create the repository. In that case, you can input another folder name
-of your choice.
+of your choice, or BETTER, change the name of the existing folder.
 
 \[7:\]
+
+"Workspace" folder inside user's "home" in the demo will need to be created by
+the facilitator.
 
 Avoid using a network or cloud storage folder (e.g. Dropbox, OneDrive); they can
 produce synchronization conflicts
