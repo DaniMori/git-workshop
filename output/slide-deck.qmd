@@ -499,9 +499,9 @@ git2r::config(user.name = "<UserName>", global = TRUE)
 # example: git2r::config(user.name = "DaniMori", global = TRUE)
 
 # Set an email address globally:
-git2r::config(user.name = "<UserName>@users.noreply.github.com", global = TRUE)
+git2r::config(user.email = "<UserName>@users.noreply.github.com", global = TRUE)
 # example:
-# git2r::config(user.name = "DaniMori@users.noreply.github.com", global = TRUE)
+# git2r::config(user.email = "DaniMori@users.noreply.github.com", global = TRUE)
 
 # (Only for Windows users) Configure line ending:
 git2r::config(core.autocrlf = "true", global = TRUE)
