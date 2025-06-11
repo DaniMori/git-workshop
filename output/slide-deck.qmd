@@ -302,6 +302,11 @@ so we can work on it and track the history of our changes easily.
 \[1:\]
 
 Not the "Code" tab, but the green "Code" button
+
+\[2:\]
+
+**BEFORE OPENING RSTUDIO**: demonstrate (and warn them to) CTRL + click to
+choose the R version to start up in the session.
 :::
 
 ## Clone repository (and II) {.smaller}
