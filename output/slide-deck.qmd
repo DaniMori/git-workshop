@@ -1,5 +1,6 @@
 ---
-title:       "Version control with git + GitHub for scientific workflows"
+title:       |
+  Reproducible Research and Collaboration in Git + Github for RStudio Users
 date:        2025-06-26
 date-format: long
 author:      |
@@ -64,6 +65,9 @@ format:
     template-partials:
       - ../www/title-slide.html
 knitr: true
+editor:
+  markdown: 
+    wrap: 80
 ---
 
 ## Setup
@@ -174,6 +178,10 @@ Taken from [Hackolade.com](https://hackolade.com/help/Teamcollaboration.html)
 Taken from [Analyzing GitHub with the search
 API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-API/)
 \@ [Perl.com](https://www.perl.com/)
+:::
+
+::: note
+Give word to @Cristrinaranjus
 :::
 
 ## Create a repository (I)
@@ -298,6 +306,11 @@ so we can work on it and track the history of our changes easily.
 \[1:\]
 
 Not the "Code" tab, but the green "Code" button
+
+\[2:\]
+
+**BEFORE OPENING RSTUDIO**: demonstrate (and warn them to) CTRL + click to
+choose the R version to start up in the session.
 :::
 
 ## Clone repository (and II) {.smaller}
@@ -332,9 +345,12 @@ Note that Rstudio fills in the folder name for you automatically; you don't need
 to create a new folder to "nest" your repository into it, it will create it
 automatically. If it already exists and is not empty, it will give you an error
 and won't create the repository. In that case, you can input another folder name
-of your choice.
+of your choice, or BETTER, change the name of the existing folder.
 
 \[7:\]
+
+"Workspace" folder inside user's "home" in the demo will need to be created by
+the facilitator.
 
 Avoid using a network or cloud storage folder (e.g. Dropbox, OneDrive); they can
 produce synchronization conflicts
@@ -351,13 +367,17 @@ while...)
 \[9:\]
 
 Signing-in: Necessary because the repository is "private"
+
+\[AFTER:\]
+
+Give word to @DaniMori
 :::
 
 ## Explore your local repo
 
--   ".git": Home of your git repository
-
 -   Folders
+
+-   ".git": Home of your git repository
 
 ::: {.fragment .nonincremental}
 -   Files:
@@ -373,6 +393,8 @@ Signing-in: Necessary because the repository is "private"
 :::
 
 ::: notes
+\[FOLDERS:\]
+
 Folders try to "mirror" (loosely) the structure of an R package.
 
 Consider which ones you may need, and which ones you will want to delete.
@@ -381,23 +403,35 @@ E.g.: Only R code, delete "output", "www/YYYY-mm-dd_Meeting_template.md", etc.
 
 (**Give a couple of minutes to explore the repository.**)
 
+\[BEFORE GIT:\]
+
+In tab "Files", tick "Show hidden files" in dropdown menu "More"
+
 In tab "Files" in Rstudio, or in the Windows explorer, show:
 
-".git": Important to not mess with it (in the Windows explorer, note that it is
-a hidden folder). If broken, delete and clone again. Manages all the files in
-the repository folder and subfolders; this is why we should never create "nested
-repositories".
-<!-- TODO: "Nested repositories" explanation can go when talking about versioning files and not folders -->
+\[.git:\]
 
-".gitignore" file will tell "git" that certain files must be "ignored"
+-   Important to not mess with it (in the Windows explorer, note that it is a
+    hidden folder). If broken, delete and clone again. Manages all the files in
+    the repository folder and subfolders.
 
-"README.md" is the "landing-page documentation" of the project. In this case, it
-is intended to explain the use of the template. Later on we will generate a new
-one for our project.
+\[.gitignore:\]
 
-".Rprofile" only runs a script (we will see later what and why)
+-   Will tell "git" that certain files must be "ignored"
 
-"renv.lock" is the "R environment" file
+\[README.md:\]
+
+-   "Landing-page documentation" of the project. In this case, it is intended to
+    explain the use of the template. Later on we will generate a new one for our
+    project.
+
+\[.Rprofile:\]
+
+-   Only runs a script (we will see later what and why)
+
+\[renv.lock:\]
+
+-   "R environment" file (explained in the next slide)
 :::
 
 ## R environment (I)
@@ -465,9 +499,9 @@ git2r::config(user.name = "<UserName>", global = TRUE)
 # example: git2r::config(user.name = "DaniMori", global = TRUE)
 
 # Set an email address globally:
-git2r::config(user.name = "<UserName>@users.noreply.github.com", global = TRUE)
+git2r::config(user.email = "<UserName>@users.noreply.github.com", global = TRUE)
 # example:
-# git2r::config(user.name = "DaniMori@users.noreply.github.com", global = TRUE)
+# git2r::config(user.email = "DaniMori@users.noreply.github.com", global = TRUE)
 
 # (Only for Windows users) Configure line ending:
 git2r::config(core.autocrlf = "true", global = TRUE)
@@ -596,23 +630,31 @@ Optionally:
 
 -   If you "revert" the changes in a non-committed file, all the work since the
     last commit is lost.
+
+\[AFTER REVERTING:\]
+
+Give word to @JesusSierralaya
 :::
 
-## Iterating our work
+## Iterating our work {.smaller}
 
-::: nonincremental
+<br>
+
+:::: nonincremental
 1.  Click on the "Commit" button in the "Git" tab of Rstudio
 
 2.  Stage files / chunks / selection of lines
 
-    -   **NEVER** click on discard chunk (\*)
+::: callout-warning
+**NEVER** click on discard chunk (\*)
+:::
 
 3.  Click on "staged / unstaged" to see the changes "ready to commit"
 
 4.  Write message in "Commit message" text box
 
 5.  Click on "Commit"
-:::
+::::
 
 ::: aside
 \*: unless you are 100% sure
@@ -629,8 +671,13 @@ Why "discard chunk" option...? Rstudio should drop this feature (IMO)
 
 \[3:\]
 
-Use the `SHIFT` key to select several lines (watch out with "selection", it does
-not always work if the computer is slow)
+**DO NOT READ**: (The following note, and "staging" individual lines/chunks in
+general, is very advanced; this part is intended only to guide co-facilitators
+in helping some attendees if they demonstrate very high skills with
+staging/unstaging, AND VC in general.)
+
+-   Use the `SHIFT` key to select several lines (watch out with "selection", it
+    does not always work if the computer is slow)
 
 \[4:\]
 
@@ -672,6 +719,35 @@ The Git tab has changed:
 ::: notes
 If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
 (local) commit (**NOT RECOMMENDED** unless you have some experience)
+:::
+
+## Viewing your history
+
+<br>
+
+-   Click on "History" in the "Git" tab
+
+-   What do the different columns mean?
+
+-   See the detailed changes in a file
+
+-   Click on "View file" in a previous commit
+
+-   Recover file / lines if necessary
+
+::: notes
+Give word to @DaniMori
+
+\[SEE DETAILED CHANGES:\]
+
+(The only available file with changes, at this point, will be "renv.lock"; not
+very "meaningful" changes.)
+
+\[VIEW FILE:\]
+
+We can "manually revert" changes in a commit by restoring a previous version of
+the file, or "copying" what we want to recover and pasting it in the current
+version in our file system.
 :::
 
 # The git workflow
@@ -874,16 +950,16 @@ It can also be done in the terminal (but no need to learn the commands)
 ## Using a dataset (and II)
 
 ::: nonincremental
--   Change the file path in line 48 of "notebook/Analysis.qmd" to point to your
+-   Change the file path in line 46 of "notebook/Analysis.qmd" to point to your
     dataset:
 
 ``` {.r code-line-numbers="5"}
 ## Read dataset:
 study_data <- read_csv(
   # TODO: Change "<dataset_filename>" by the name of your own dataset, e.g.:
-  #   file = "dat/breslow_chatterjee_1999.csv"
+  # file = "dat/breslow_chatterjee_1999.csv",
   file = "dat/<dataset_filename>",
-  col_types      = cols(
+  col_types = cols(
     instit       = col_factor(),
 ...
 ```
@@ -1010,28 +1086,6 @@ license file; a brief comment on licensing may be in place here).
 -   Show how the repository now has a nice, personalized main page where the
     "README.md" file has all the instructions for visitors to clone their
     repository and understand what is its purpose.
-:::
-
-## Viewing your history
-
-<br>
-
--   Click on "History" in the "Git" tab
-
--   What do the different columns mean?
-
--   See the detailed changes in a file
-
--   Click on "View file" in a previous commit
-
--   Recover file / lines if necessary
-
-::: notes
-\[VIEW FILE:\]
-
-We can "manually revert" changes in a commit by restoring a previous version of
-the file, or "copying" what we want to recover and pasting it in the current
-version in our file system.
 :::
 
 # Wrapping up
@@ -1189,4 +1243,3 @@ Save hours of lifetime with shortcuts (\*):
 -   [Pro Git, 2nd edition](https://git-scm.com/book/en/v2), by Scott Chacon and
     Ben Straub
 :::
-
