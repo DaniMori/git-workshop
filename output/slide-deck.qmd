@@ -180,7 +180,7 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
 \@ [Perl.com](https://www.perl.com/)
 :::
 
-::: note
+::: notes
 Give word to @Cristrinaranjus
 :::
 
@@ -335,7 +335,7 @@ repositories.
 ::::
 
 ::: aside
-\*: You will only be asked once (by computer)
+\*: You will only be asked once (per computer)
 :::
 
 ::: notes
