@@ -631,7 +631,7 @@ Optionally:
 -   If you "revert" the changes in a non-committed file, all the work since the
     last commit is lost.
 
-\[AFTER REVERTING:\]
+\[AFTER:\]
 
 Give word to @JesusSierralaya
 :::
@@ -667,6 +667,10 @@ Give word to @JesusSierralaya
 
 \[2:\]
 
+-   We stage changes in both files (one added, one modified) TOGETHER, because
+    they are a meaningful "iteration unit", i.e., adding a new notebook AND the
+    packages needed to run it (in "renv.lock").
+
 Why "discard chunk" option...? Rstudio should drop this feature (IMO)
 
 \[3:\]
@@ -681,12 +685,16 @@ staging/unstaging, AND VC in general.)
 
 \[4:\]
 
-When seeing the "staged" changes, notice how the "stage chunk" and "discard
-chunk" buttons change to "unstage chunk"
+-   When seeing the "staged" changes, notice how the "stage chunk" and "discard
+    chunk" buttons change to "unstage chunk"
 
 \[5:\]
 
-Git does not allow "empty commmit messages"
+-   Git does not allow "empty commmit messages"
+
+-   Always write "meaningful" commit message.
+
+-   Use **"Add analysis notebook"** as commit message in this case.
 
 \[AFTER:\]
 
@@ -1008,8 +1016,12 @@ OR
 ::: notes
 \[TODO COMMENTS:\]
 
-{broom} & {broom.helpers} are required by {gtsummary} so they need to be
-installed, but they do not need to be loaded with `library()`.
+-   {broom} & {broom.helpers} are required by {gtsummary} so they need to be
+    installed, but they do not need to be loaded with `library()`.
+
+\[MAKE CHANGES:\]
+
+-   Save the changes with the disk (or `CTRL + S` in Windows)
 :::
 
 ## Making your repo "Reusable" {.smaller}
