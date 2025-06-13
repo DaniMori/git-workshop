@@ -643,7 +643,7 @@ Give word to @JesusSierralaya
 :::: nonincremental
 1.  Click on the "Commit" button in the "Git" tab of Rstudio
 
-2.  Stage files / chunks / selection of lines
+2.  Stage files
 
 ::: callout-warning
 **NEVER** click on discard chunk (\*)
@@ -990,16 +990,16 @@ shown with `normalizePath("~", winslash = '/')`
 ## Making new commits
 
 ::: nonincremental
--   Solve & delete "TODO" comments in "notebookds/Analysis.qmd"
+-   Solve & delete "TODO" comments in "notebooks/Analysis.qmd"
 
 OR
 
 -   Make changes to your own notebook/script
 :::
 
-<br>
-
 -   Make sure your notebook/script runs without errors
+
+-   Stage files / chunks / selection of lines
 
 -   Commit changes
 
