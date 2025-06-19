@@ -373,67 +373,6 @@ Signing-in: Necessary because the repository is "private"
 Give word to @DaniMori
 :::
 
-## Explore your local repo
-
--   Folders
-
--   ".git": Home of your git repository
-
-::: {.fragment .nonincremental}
--   Files:
-    -   ".gitignore"
-
-    -   "README.md" and "README.Rmd"
-
-    -   "LICENSE.md" (you can [choose others](https://choosealicense.com/))
-
-    -   ".Rprofile"
-
-    -   "renv.lock"
-:::
-
-::: notes
-\[FOLDERS:\]
-
-Folders try to "mirror" (loosely) the structure of an R package.
-
-Consider which ones you may need, and which ones you will want to delete.
-
-E.g.: Only R code, delete "output", "www/YYYY-mm-dd_Meeting_template.md", etc.
-
-(**Give a couple of minutes to explore the repository.**)
-
-\[BEFORE GIT:\]
-
-In tab "Files", tick "Show hidden files" in dropdown menu "More"
-
-In tab "Files" in Rstudio, or in the Windows explorer, show:
-
-\[.git:\]
-
--   Important to not mess with it (in the Windows explorer, note that it is a
-    hidden folder). If broken, delete and clone again. Manages all the files in
-    the repository folder and subfolders.
-
-\[.gitignore:\]
-
--   Will tell "git" that certain files must be "ignored"
-
-\[README.md:\]
-
--   "Landing-page documentation" of the project. In this case, it is intended to
-    explain the use of the template. Later on we will generate a new one for our
-    project.
-
-\[.Rprofile:\]
-
--   Only runs a script (we will see later what and why)
-
-\[renv.lock:\]
-
--   "R environment" file (explained in the next slide)
-:::
-
 ## R environment (I)
 
 <br>
