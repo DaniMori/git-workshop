@@ -192,7 +192,8 @@ project (analysis, paper, thesis, or a wider project).
 
 \[1:\]
 
-Depending on your settings you may be required a 2-factor authentication method
+-   Depending on your privacy settings you may be required a 2-factor
+    authentication method
 
 -   Open it in **default browser** preferably, or the one you used for opening
     the presentation (i.e., make sure the links open in the same browser where
@@ -200,7 +201,7 @@ Depending on your settings you may be required a 2-factor authentication method
 
 \[3:\]
 
-The template will add some useful pre-cooked features to the new repository
+-   The template will add some useful pre-cooked features to the new repository
 :::
 
 ## Create a repository (and II) {.smaller}
@@ -286,8 +287,9 @@ of the main branch)
 ::: notes
 \[BEFORE:\]
 
-**PURPOSE:** We are going to "clone" or create a local copy of our repository,
-so we can work on it and track the history of our changes easily.
+-   **PURPOSE:** We are going to "clone" or create a local copy of our
+    repository, so we can work on it and track the history of our changes
+    easily.
 
 \[1:\]
 
@@ -347,10 +349,9 @@ the facilitator.
 OneDrive syncronization. In that case they should use some other (local,
 non-cloud) folder.
 
-Network units can conflict with the R environment (more about this in a
-while...)
+Network units can conflict with the R environment.
 
-**NEVER** clone a repository inside another one
+-   **NEVER** clone a repository inside another one.
 
 \[9:\]
 
@@ -383,12 +384,11 @@ Give word to @DaniMori
 
 -   Notice {renv} messages in the console. Explain that what it means:
     Inizialization of {renv}, a system to make the "environment" (packages &
-    versions) reproducible. This file contains a list of the "packages and their
-    versions" to make a project reproducible. But it does not install those
-    packages.
+    versions) reproducible. This file contains that list of "packages and their
+    versions", but it does not install them.
 
--   After the repository is cloned, we have to tell it to "install" all the
-    packages of the environment, with their versions.
+-   After the repository is cloned, we have to tell it to "restore" the
+    environment.
 :::
 
 ## R environment (and II)
@@ -425,6 +425,8 @@ help them from this point on.
 
 -   The environment has been restored (i.e. packages installed). This makes the
     environment "more reproducible" (with the R packages and their versions).
+
+-   Much quicker, safer, and reproducible than installing packages one by one.
 :::
 
 # Let's make some changes
@@ -802,12 +804,6 @@ The "dat" folder is ignored (i.e. any file whose path "starts with" that folder)
 
 The line in ".gitignore" can be commented (with a \# in front) or deleted, the
 file staged, and then the line uncommented again.
-
-OR
-
-A new line with a `!` in front of the file path can be added.
-
-It can also be done in the terminal (but no need to learn the commands)
 :::
 
 ## Using a dataset (and II)
@@ -904,16 +900,11 @@ ZIP](https://www.tometchy.com/publication/wycisnij-soki-z-gita-przestan-uzywac-j
 -   Recover file / lines if necessary
 
 ::: notes
-\[SEE DETAILED CHANGES:\]
-
-(The only available file with changes, at this point, will be "renv.lock"; not
-very "meaningful" changes.)
-
 \[VIEW FILE:\]
 
-We can "manually revert" changes in a commit by restoring a previous version of
-the file, or "copying" what we want to recover and pasting it in the current
-version in our file system.
+-   We can "manually revert" changes in a commit by restoring a previous version
+    of the file, or "copying" what we want to recover and pasting it in the
+    current version in our file system.
 :::
 
 ## DOs and DON'Ts in git {.smaller}
