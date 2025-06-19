@@ -97,8 +97,8 @@ editor:
 
 -   Follow presentation, useful for copy-pasting (tested in Chrome)
 
--   To avoid opening the file link in the same tab as the presentation, press
-    `CTRL + click`.
+To avoid opening the file link in the same tab as the presentation, press
+`CTRL + click`.
 
 After clicking the link, direct attention to the three-dot menu and "Download".
 :::
