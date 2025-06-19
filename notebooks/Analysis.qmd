@@ -99,6 +99,8 @@ In the following we see the descriptive statistics and the contingency table.
 # study_data |> tbl_summary(include = -seqno)
 ```
 
+<br>
+
 ```{r contingency-table}
 ## TODO: Uncomment next line if using {gtsummary}
 # study_data |> tbl_cross(row = instit, col = histol)
