@@ -729,35 +729,6 @@ If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
 (local) commit (**NOT RECOMMENDED** unless you have some experience)
 :::
 
-## Viewing your history
-
-<br>
-
--   Click on "History" in the "Git" tab
-
--   What do the different columns mean?
-
--   See the detailed changes in a file
-
--   Click on "View file" in a previous commit
-
--   Recover file / lines if necessary
-
-::: notes
-Give word to @DaniMori
-
-\[SEE DETAILED CHANGES:\]
-
-(The only available file with changes, at this point, will be "renv.lock"; not
-very "meaningful" changes.)
-
-\[VIEW FILE:\]
-
-We can "manually revert" changes in a commit by restoring a previous version of
-the file, or "copying" what we want to recover and pasting it in the current
-version in our file system.
-:::
-
 # The git workflow
 
 ![](../www/git-commands.png){fig-align="center" height="520"}
@@ -768,6 +739,8 @@ Mahugh](https://www.dougmahugh.com/envisioning-github/)
 :::
 
 ::: notes
+Give word to @DaniMori
+
 (Optionally) Use the "Post office" metaphor to explain:
 
 -   Stage: Pack products (changes) to send (you can "pack" several files or
@@ -1024,6 +997,33 @@ OR
 -   Save the changes with the disk (or `CTRL + S` in Windows)
 :::
 
+## Viewing your history
+
+<br>
+
+-   Click on "History" in the "Git" tab
+
+-   What do the different columns mean?
+
+-   See the detailed changes in a file
+
+-   Click on "View file" in a previous commit
+
+-   Recover file / lines if necessary
+
+::: notes
+\[SEE DETAILED CHANGES:\]
+
+(The only available file with changes, at this point, will be "renv.lock"; not
+very "meaningful" changes.)
+
+\[VIEW FILE:\]
+
+We can "manually revert" changes in a commit by restoring a previous version of
+the file, or "copying" what we want to recover and pasting it in the current
+version in our file system.
+:::
+
 ## Making your repo "Reusable" {.smaller}
 
 <br>
@@ -1255,3 +1255,4 @@ Save hours of lifetime with shortcuts (\*):
 -   [Pro Git, 2nd edition](https://git-scm.com/book/en/v2), by Scott Chacon and
     Ben Straub
 :::
+
