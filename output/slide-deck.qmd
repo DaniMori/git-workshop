@@ -415,10 +415,48 @@ Notice that there is a new "drop down" menu, "renv", in the "Packages" tab.
 
 The environment has been restored (i.e. packages installed). This makes the
 environment "more reproducible"
+# Let's make some changes
 
-Explanation (if necessary): Not completely reproducible, only dependencies from
-R packages; other stuff e.g. LaTeX packages, TeX engine... are not versioned by
-{renv}.
+![](../www/edit-code.png){fig-align="center" height="250"}
+
+<br>
+
+::: aside
+"Edit code" icon from [Flaticon, created by Yogi
+Aprelliyanto](https://www.flaticon.com/free-icons/edit-code)
+:::
+
+## Adding new files
+
+<br>
+
+::: nonincremental
+-   Download <https://bit.ly/gitws-nb>
+
+OR
+
+-   copy ***a notebook/script of you own***
+
+to your local repository
+:::
+
+-   Install necessary packages, then "renv" -\> "Snapshot Library..."
+
+::: notes
+\[BEFORE:\]
+
+-   **NOTE**: To avoid opening the file link in the same tab as the
+    presentation, press `CTRL + click`. After clicking the link, direct
+    attention to button "Download raw file" in GitHub.
+
+\[SNAPSHOT LIBRARY:\]
+
+-   Install packages: The editor warns (in an upper banner) about missing
+    packages when you open the notebook, and gives the option to install them.
+
+-   Snapshot library: The new libraries will be added to the "renv.lock"
+:::
+
 :::
 
 ## Setting up git (\*)
@@ -485,44 +523,6 @@ Pay attention to section "global".
 Aprelliyanto](https://www.flaticon.com/free-icons/edit-code)
 :::
 
-## Adding new files
-
-<br>
-
-::: nonincremental
--   Download <https://bit.ly/gitws-nb>
-
-OR
-
--   copy ***a notebook/script of you own***
-
-to your local repository
-:::
-
--   Install necessary packages, then "renv" -\> "Snapshot Library..."
-
-::: notes
-\[BEFORE:\]
-
-**NOTE**: To avoid opening the file link in the same tab as the presentation,
-press `CTRL + click`. After clicking the link, direct attention to button
-"Download raw file" in GitHub.
-
-\[SNAPSHOT LIBRARY:\]
-
-Install packages: The editor warns (in an upper banner) about missing packages
-when you open the notebook, and gives the option to install them.
-
-Snapshot library: The new libraries will be added to the "renv.lock"
-:::
-
-# Versioning in git
-
-![](../www/git-lifecycle-states.png){fig-align="center" height="450"}
-
-::: aside
-Taken from [Git for Network Engineers Series -- The Basics (Part
-I)](https://blogs.cisco.com/learning/git-for-network-engineers-series-the-basics-part-1)
 :::
 
 ## Viewing changes
@@ -690,34 +690,6 @@ Give word to @DaniMori
     a package with several changes)
 :::
 
-## (Even more) git jargon (\*)
-
-<br>
-
-::: nonincremental
--   **Push**: Send local changes to the remote repository
-:::
-
-<br>
-
--   **Pull**: Get remote changes\
-    (to local repository & workspace)
-
-::: aside
-\*: Last one, I promise!
-:::
-
-::: notes
-\[PUSH:\]
-
--   Push: Send packages to their destination (changes to GitHub)
-
-(You can check in several "packages" and the post officer can pick them up
-altogether. They are not "sent" to GitHub until you "push" them.)
-
-\[PULL:\]
-
--   Pull: Receive your packages (fetch changes and merge them)
 :::
 
 ## Synchronizing with GitHub
@@ -759,23 +731,39 @@ altogether. They are not "sent" to GitHub until you "push" them.)
 
 -   In this case, the local repository is in sync with the remote, so it will
     not make any new changes. (The "Pull" command is only shown for drilling and
-    getting used to it)
+    getting used to it.)
 :::
 
+## (Even more) git jargon (\*)
 
 <br>
 
+::: nonincremental
+-   **Push**: Send local changes to the remote repository
 :::
 
+<br>
 
+-   **Pull**: Get remote changes\
+    (to local repository & workspace)
 
+::: aside
+\*: Last one, promised!
+:::
 
 ::: notes
+\[PUSH:\]
 
+-   Push: Send packages to their destination (changes to GitHub)
 
+(You can check in several "packages" and the post officer can pick them up
+altogether. They are not "sent" to GitHub until you "push" them.)
 
+\[PULL:\]
 
+-   Pull: Receive your packages (fetch changes and merge them)
 
+-   Click on "Pull" once (just to know what it does)
 :::
 
 # Let's practice!
