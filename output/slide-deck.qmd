@@ -457,6 +457,13 @@ to your local repository
 -   Snapshot library: The new libraries will be added to the "renv.lock"
 :::
 
+# Versioning in git
+
+![](../www/git-lifecycle-states.png){fig-align="center" height="450"}
+
+::: aside
+Taken from [Git for Network Engineers Series -- The Basics (Part
+I)](https://blogs.cisco.com/learning/git-for-network-engineers-series-the-basics-part-1)
 :::
 
 ## Setting up git (\*)
