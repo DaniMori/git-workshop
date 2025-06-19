@@ -74,18 +74,18 @@ Origin of all the image files attributed in the corresponding slides in
 Start by installing the following software components:
 
 - [R version
-  4.5.0](https://cran.rstudio.com/bin/windows/base/old/4.5.0/): In
+  4.5.1](https://cran.rstudio.com/bin/windows/base/old/4.5.1/): In
   Windows, using the [binary
-  installer](https://cran.rstudio.com/bin/windows/base/old/4.5.0/R-4.5.0-win.exe)
+  installer](https://cran.rstudio.com/bin/windows/base/old/4.5.1/R-4.5.1-win.exe)
   is recommended.
 
 <!-- -->
 
 - [Rstudio Desktop](https://posit.co/download/rstudio-desktop/):
   Although not strictly necessary, it is recommended to install the
-  Rstudio IDE; for strict reproducibility, use build [2025.05.0+496 for
+  Rstudio IDE; for strict reproducibility, use build [2025.05.1+513 for
   Windows
-  10/11](https://download1.rstudio.org/electron/windows/RStudio-2025.05.0-496.exe).
+  10/11](https://download1.rstudio.org/electron/windows/RStudio-2025.05.1-513.exe).
 
 <!-- -->
 
@@ -100,7 +100,7 @@ Start by installing the following software components:
 - [Git client](https://git-scm.com/download): Install the Git client in
   order to be able to clone locally the project repository. On Windows,
   use [the 64-bit Windows
-  installer](https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe).
+  installer](https://github.com/git-for-windows/git/releases/download/v2.50.0.windows.1/Git-2.50.0-64-bit.exe).
 
 ## Installing the project locally
 
