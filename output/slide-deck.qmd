@@ -675,6 +675,11 @@ Why "discard chunk" option...? Rstudio should drop this feature (IMO)
 
 \[3:\]
 
+-   What we stage ("add" to a commit) is not a file, but a "change". That means,
+    e.g., that a "deleted file" can also be "added as a change" to a commit. The
+    file will "disappear from history" from that point on (but not from the
+    previous ones).
+
 **DO NOT READ**: (The following note, and "staging" individual lines/chunks in
 general, is very advanced; this part is intended only to guide co-facilitators
 in helping some attendees if they demonstrate very high skills with
