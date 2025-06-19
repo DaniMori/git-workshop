@@ -114,46 +114,6 @@ GitHub](https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/) \@
 [freeCodeCamp](https://www.freecodecamp.org)
 :::
 
-## What is git?
-
-<br>
-
--   Version control system
-
-<br>
-
--   "History" of changes
-
-<br>
-
--   Allows "time-travelling"
-
-## What is Github?
-
-<br>
-
--   Centralized git server
-
-<br>
-
--   Backup + collaboration
-
-<br>
-
--   Nice GUI & features on top of VC
-
-## git jargon
-
-<br>
-
--   **Repository ("repo")**: A "project", where all your files live
-
--   **Remote**: Copy of a repository in Github
-
--   **Local**: Copy of a repository in your computer
-
--   **Clone**: To copy a local repository from a remote
-
 ## Typical VC setup
 
 ![](../www/git-workflow.png){fig-align="center" height="520"}
@@ -163,12 +123,37 @@ Taken from [Hackolade.com](https://hackolade.com/help/Teamcollaboration.html)
 :::
 
 ::: notes
+\[BEFORE:\]
+
+-   git is VC system, GitHub is "centralized git server" (there are others!)
+
+-   git creates a "history" of changes (allows "time-travelling")
+
+\[AFTER:\]
+
 -   You have a "local repository"
 
 -   You don't need a "cloud server" to use version control
 
--   You use a VC server to back-up and collaborate
+-   You use a VC server (e.g. GitHub) for back-up and collaborate (thanks to GUI
+    and features on top of VC)
 :::
+
+## git jargon
+
+-   **Repository ("repo")**: A "project", where all your files live
+
+<br>
+
+-   **Remote**: Copy of a repository in Github
+
+<br>
+
+-   **Local**: Copy of a repository in your computer
+
+<br>
+
+-   **Clone**: To copy a local repository from a remote
 
 # First steps in GitHub
 
