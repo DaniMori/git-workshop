@@ -384,12 +384,23 @@ Give word to @DaniMori
 ```
 
 ::: notes
+\[BEFORE:\]
+
+There are a few files and folders that we don't have time to explore in detail.
+Just to let you know, they implement some usually recommended "best practice"
+features in R and Rstudio projects that will save you time and headaches in the
+future.
+
+\[renv.lock FILE:\]
+
 Notice {renv} messages in the console. Explain that what it means:
 Inizialization of {renv}, a system to make the "environment" (packages &
-versions) reproducible.
+versions) reproducible. This file contains a list of the "packages and their
+versions" to make a project reproducible. But it does not install those
+packages.
 
 After the repository is cloned, we have to tell it to "install" all the packages
-of the environment.
+of the environment, with their versions.
 :::
 
 ## R environment (and II)
