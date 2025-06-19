@@ -98,8 +98,9 @@ editor:
 -   Follow presentation, useful for copy-pasting (tested in Chrome)
 
 -   To avoid opening the file link in the same tab as the presentation, press
-    `CTRL + click`. After clicking the link, direct attention to button
-    "Download raw file"
+    `CTRL + click`.
+
+After clicking the link, direct attention to the three-dot menu and "Download".
 :::
 
 # git + GitHub: An overview
@@ -442,7 +443,7 @@ Aprelliyanto](https://www.flaticon.com/free-icons/edit-code)
 <br>
 
 ::: nonincremental
--   Download <https://bit.ly/gitws-nb>
+-   Download <https://osf.io/8mzjp>
 
 OR
 
@@ -457,8 +458,9 @@ to your local repository
 \[BEFORE:\]
 
 -   **NOTE**: To avoid opening the file link in the same tab as the
-    presentation, press `CTRL + click`. After clicking the link, direct
-    attention to button "Download raw file" in GitHub.
+    presentation, press `CTRL + click`.
+
+After clicking the link, direct attention to the three-dot menu and "Download".
 
 \[SNAPSHOT LIBRARY:\]
 
@@ -766,7 +768,7 @@ altogether. They are not "sent" to GitHub until you "push" them.)
 <br>
 
 ::: nonincremental
--   Download <https://bit.ly/gitws-data>
+-   Download <https://osf.io/y3r7v>
 
 OR
 
@@ -787,9 +789,10 @@ GitHub, thus preventing them from using their own dataset. We should highlight
 that there is no risk in adding files to the "dat" folder, and that nothing will
 be uploaded to GitHub unless they intentionally do it.
 
-**NOTE**: To avoid opening the file link in the same tab as the presentation,
-press `CTRL + click`. After clicking the link, direct attention to button
-"Download raw file"
+-   To avoid opening the file link in the same tab as the presentation, press
+    `CTRL + click`.
+
+After clicking the link, direct attention to the three-dot menu and "Download".
 
 \[FILE DOESN'T SHOW:\]
 
