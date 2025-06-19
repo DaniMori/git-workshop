@@ -762,53 +762,20 @@ altogether. They are not "sent" to GitHub until you "push" them.)
     getting used to it)
 :::
 
-## DOs and DON'Ts in git {.smaller}
 
 <br>
 
-#### DON'T
-
--   Be afraid of changes
-
--   Commit without testing the changes
-
--   "Bulk-commit" all your progress
-
--   Ammend an already pushed commit
-
-<br>
-
-::: fragment
-#### DO
 :::
 
--   Pull always when beginning to work
 
--   Write [meaningful commit messages](https://cbea.ms/git-commit/)
 
--   Commit (+ Push) often
-
--   Push always when finishing work
 
 ::: notes
-SHOULD NOT SPEND TOO MUCH TIME ON THIS
 
-\[DON'T / BULK-COMIT:\]
 
--   It's better to "be concious" when creating commits; it will pay off in the
-    future.
 
-\[DO / PULL:\]
 
--   Pull when beginning session: It is **good practice** to remember to always
-    `pull` at the beginning of a session (e.g., a collaborator of yours, or
-    yourself from another computer, may have pushed changes)
 
-\[DO / COMMIT + PUSH:\]
-
--   One does not need to "push" every time changes are committed. But it's good
-    practice to push at least once in a while, when one is sure of the changes,
-    or at least at the end of the working session
 :::
 
 # Let's practice!
@@ -937,6 +904,16 @@ OR
 -   Save the changes with the disk (or `CTRL + S` in Windows)
 :::
 
+# Getting git's best value
+
+![](../www/squeeze-git.jpg){fig-align="center" height="350"}
+
+::: aside
+Taken from [Squeeze the most out of Git, stop using it as
+ZIP](https://www.tometchy.com/publication/wycisnij-soki-z-gita-przestan-uzywac-jak-zipa)
+\@ [tometchy.com/](https://www.tometchy.com/)
+:::
+
 ## Viewing your history
 
 <br>
@@ -962,6 +939,55 @@ very "meaningful" changes.)
 We can "manually revert" changes in a commit by restoring a previous version of
 the file, or "copying" what we want to recover and pasting it in the current
 version in our file system.
+:::
+
+## DOs and DON'Ts in git {.smaller}
+
+<br>
+
+#### DON'T
+
+-   Be afraid of changes
+
+-   Commit without testing the changes
+
+-   "Bulk-commit" all your progress
+
+-   Ammend an already pushed commit
+
+<br>
+
+::: fragment
+#### DO
+:::
+
+-   Pull always when beginning to work
+
+-   Write [meaningful commit messages](https://cbea.ms/git-commit/)
+
+-   Commit (+ Push) often
+
+-   Push always when finishing work
+
+::: notes
+SHOULD NOT SPEND TOO MUCH TIME ON THIS
+
+\[DON'T / BULK-COMIT:\]
+
+-   It's better to "be concious" when creating commits; it will pay off in the
+    future.
+
+\[DO / PULL:\]
+
+-   Pull when beginning session: It is **good practice** to remember to always
+    `pull` at the beginning of a session (e.g., a collaborator of yours, or
+    yourself from another computer, may have pushed changes)
+
+\[DO / COMMIT + PUSH:\]
+
+-   One does not need to "push" every time changes are committed. But it's good
+    practice to push at least once in a while, when one is sure of the changes,
+    or at least at the end of the working session
 :::
 
 ## Making your repo "Reusable" {.smaller}
