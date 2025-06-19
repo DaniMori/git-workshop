@@ -234,13 +234,13 @@ later on
 ::: notes
 \[5:\]
 
-The name must be something short, and representatitve of the project aim (beware
-of whitespaces)
+-   The name must be something short, and representatitve of the project aim
+    (beware of whitespaces)
 
-Description must be "short" and direct
+-   Description must be "short" and direct
 
-If they are using their own project, better suggest that they choose their own
-name and description.
+If they are using their own project, better **suggest that they choose their own
+name and description**.
 
 \[6:\]
 
@@ -290,12 +290,14 @@ so we can work on it and track the history of our changes easily.
 
 \[1:\]
 
-Not the "Code" tab, but the green "Code" button
+-   Not the "Code" tab, but the green "Code" button
 
 \[2:\]
 
-**BEFORE OPENING RSTUDIO**: demonstrate (and warn them to) CTRL + click to
+**BEFORE OPENING RSTUDIO**: Demonstrate (and warn them to) CTRL + click to
 choose the R version to start up in the session.
+
+IMPORTANT that they have the latest R version installed.
 :::
 
 ## Clone repository (and II) {.smaller}
@@ -326,19 +328,19 @@ repositories.
 ::: notes
 \[6:\]
 
-Note that Rstudio fills in the folder name for you automatically; you don't need
-to create a new folder to "nest" your repository into it, it will create it
-automatically. If it already exists and is not empty, it will give you an error
-and won't create the repository. In that case, you can input another folder name
-of your choice, or BETTER, change the name of the existing folder.
+Note that Rstudio (sometimes) fills in the folder name for you automatically;
+you don't need to create a new folder to "nest" your repository into it, it will
+create it automatically. If it already exists and is not empty, it will give you
+an error and won't create the repository. In that case, you can input another
+folder name of your choice, or BETTER, change the name of the existing folder.
 
 \[7:\]
 
 "Workspace" folder inside user's "home" in the demo will need to be created by
 the facilitator.
 
-Avoid using a network or cloud storage folder (e.g. Dropbox, OneDrive); they can
-produce synchronization conflicts
+-   Avoid using a network or cloud storage folder (e.g. Dropbox, OneDrive); they
+    can produce synchronization conflicts.
 
 **WARNING**: Some users may have their "Documents" folder added to their
 OneDrive syncronization. In that case they should use some other (local,
@@ -351,7 +353,7 @@ while...)
 
 \[9:\]
 
-Signing-in: Necessary because the repository is "private"
+-   Signing-in: Necessary because the repository is "private"
 
 \[AFTER:\]
 
@@ -371,21 +373,21 @@ Give word to @DaniMori
 ::: notes
 \[BEFORE:\]
 
-There are a few files and folders that we don't have time to explore in detail.
-Just to let you know, they implement some usually recommended "best practice"
-features in R and Rstudio projects that will save you time and headaches in the
-future.
+-   There are a few files and folders that we don't have time to explore in
+    detail. Just to let you know, they implement some usually recommended "best
+    practice" features in R and Rstudio projects that will save you time and
+    headaches in the future.
 
 \[renv.lock FILE:\]
 
-Notice {renv} messages in the console. Explain that what it means:
-Inizialization of {renv}, a system to make the "environment" (packages &
-versions) reproducible. This file contains a list of the "packages and their
-versions" to make a project reproducible. But it does not install those
-packages.
+-   Notice {renv} messages in the console. Explain that what it means:
+    Inizialization of {renv}, a system to make the "environment" (packages &
+    versions) reproducible. This file contains a list of the "packages and their
+    versions" to make a project reproducible. But it does not install those
+    packages.
 
-After the repository is cloned, we have to tell it to "install" all the packages
-of the environment, with their versions.
+-   After the repository is cloned, we have to tell it to "install" all the
+    packages of the environment, with their versions.
 :::
 
 ## R environment (and II)
@@ -409,12 +411,21 @@ Update the environment:
 ::: notes
 \[2:\]
 
-Notice that there is a new "drop down" menu, "renv", in the "Packages" tab.
+-   Notice that there is a new "drop down" menu, "renv", in the "Packages" tab.
+
+\[3\]:
+
+**NOTE FOR CO-FACILITATORS:** If `renv::restore()` fails, check that the R
+version being used is the one we asked for the workshop
+(`{r} paste(version$major, version$minor, sep = '.')`); if it is not, we cannot
+help them from this point on.
 
 \[AFTER:\]
 
-The environment has been restored (i.e. packages installed). This makes the
-environment "more reproducible"
+-   The environment has been restored (i.e. packages installed). This makes the
+    environment "more reproducible" (with the R packages and their versions).
+:::
+
 # Let's make some changes
 
 ![](../www/edit-code.png){fig-align="center" height="250"}
@@ -498,38 +509,27 @@ git2r::config()
 ::: notes
 \[USER NAME\]:
 
-Mind the double quotes, but DO NOT type in the carets; type in your name or
-(preferably) GitHub user name. This is what will appear in your repo "history"
-when you "commit" or create versions, e.g.:
+-   Mind the double quotes, but DO NOT type in the carets; type in your name or
+    (preferably) GitHub user name. This is what will appear in your repo
+    "history" when you "commit" or create versions, e.g.:
 
 `git config --global user.name "DaniMori"`
 
 \[EMAIL\]:
 
-Type in your email (also mind the double quotes). Better use "User name" at
-"users.noreply.github.com" (for obfuscating actual email from public exposure),
-e.g.:
+-   Type in your email (also mind the double quotes). Better use "User name" at
+    "users.noreply.github.com" (for obfuscating actual email from public
+    exposure), e.g.:
 
 `git config --global user.email "DaniMori@users.noreply.github.com"`
 
 \[AUTO CRLF\]:
 
-Avoid compatibility issues with line endings in Windows.
+-   Avoid compatibility issues with line endings in Windows.
 
 \[CONFIGURATION CHECK\]:
 
-Pay attention to section "global".
-:::
-
-# Let's make some changes
-
-![](../www/edit-code.png){fig-align="center" height="250"}
-
-::: aside
-"Edit code" icon from [Flaticon, created by Yogi
-Aprelliyanto](https://www.flaticon.com/free-icons/edit-code)
-:::
-
+-   Pay attention to section "global".
 :::
 
 ## Viewing changes
@@ -605,15 +605,13 @@ Give word to @JesusSierralaya
 ::: notes
 \[BEFORE:\]
 
-**PURPOSE:** Create new commits (points in history) with our latest changes.
+-   **PURPOSE:** Create new commits (points in history) with our latest changes.
 
 \[2:\]
 
 -   We stage changes in both files (one added, one modified) TOGETHER, because
     they are a meaningful "iteration unit", i.e., adding a new notebook AND the
     packages needed to run it (in "renv.lock").
-
-Why "discard chunk" option...? Rstudio should drop this feature (IMO)
 
 \[3:\]
 
@@ -627,8 +625,8 @@ general, is very advanced; this part is intended only to guide co-facilitators
 in helping some attendees if they demonstrate very high skills with
 staging/unstaging, AND VC in general.)
 
--   Use the `SHIFT` key to select several lines (watch out with "selection", it
-    does not always work if the computer is slow)
+We can use the `SHIFT` key to select several lines (watch out with "selection",
+it does not always work if the computer is slow)
 
 \[4:\]
 
@@ -645,7 +643,7 @@ staging/unstaging, AND VC in general.)
 
 \[AFTER:\]
 
-The Git tab has changed:
+-   The Git tab has changed:
 
 -   The "added/deleted/modified files" are not shown anymore. This means that
     the files are in the same state as the latest version recorded by git. Only
@@ -672,31 +670,10 @@ The Git tab has changed:
 -   **Revert**: Revert changes to a file (revert to last commit)
 
 ::: notes
-If asked about "Ammend" by attendees: It allows you to "correct" and overwrite a
-(local) commit (**NOT RECOMMENDED** unless you have some experience)
-:::
+**If asked about "Ammend"**: It allows you to "correct" and overwrite a (local)
+commit (**NOT RECOMMENDED** unless you have some experience)
 
-# The git workflow
-
-![](../www/git-commands.png){fig-align="center" height="520"}
-
-::: aside
-*Envisioning git* by [Doug
-Mahugh](https://www.dougmahugh.com/envisioning-github/)
-:::
-
-::: notes
 Give word to @DaniMori
-
-(Optionally) Use the "Post office" metaphor to explain:
-
--   Stage: Pack products (changes) to send (you can "pack" several files or
-    changes in a single package)
-
--   Commit: Check packages (changes) in to the postal service (each "commit" is
-    a package with several changes)
-:::
-
 :::
 
 ## Synchronizing with GitHub
@@ -722,7 +699,7 @@ Give word to @DaniMori
 ::: notes
 \[BEFORE:\]
 
-**PURPOSE:** Synchronize local changes with GitHub
+-   **PURPOSE:** Synchronize local changes with GitHub
 
 \[PUSH:\]
 
