@@ -806,7 +806,9 @@ The line in ".gitignore" can be commented (with a \# in front) or deleted, the
 file staged, and then the line uncommented again.
 :::
 
-## Using a dataset (and II)
+## Using a dataset (and II) {.smaller}
+
+<br>
 
 ::: nonincremental
 -   Change the file path in line 46 of "notebook/Analysis.qmd" to point to your
@@ -823,6 +825,8 @@ study_data <- read_csv(
 ...
 ```
 
+-   Save your changes!
+
 -   Notice the "working directory" on top of the "Console" tab
 :::
 
@@ -832,7 +836,13 @@ to make your code reproducible across computers
 :::
 
 ::: notes
-Using relative paths:
+\[SAVE CHANGES:\]
+
+Show how to use the "diskette icon" or `CTRL + S` in Windows to save the
+changes; show that the "asterisk" in the file name disappears, meaning that the
+changes to the file have been saved to the file system.
+
+\[USING RELATIVE PATHS:\]
 
 -   The working directory will always be the base folder for Rstudio projects
 
@@ -846,7 +856,9 @@ shown with `normalizePath("~", winslash = '/')`
 -   Use `here::here()` instead
 :::
 
-## Making new commits
+## Making new commits {.smaller}
+
+<br>
 
 ::: nonincremental
 -   Solve & delete "TODO" comments in "notebooks/Analysis.qmd"
@@ -855,6 +867,8 @@ OR
 
 -   Make changes to your own notebook/script
 :::
+
+-   Save your latest changes!
 
 -   Make sure your notebook/script runs without errors
 
