@@ -8,15 +8,21 @@ bibliography: "www/dataset_ref.bib"
 nocite: '@breslow_design_1999'
 ---
 
-# Respository `sortee-git-workshop`
+# Repository `git-workshop`
 
-Workshop "Reproducible research and collaboration in git and GitHub" at
-the 2024 SORTEE Conference.
+Workshop "Reproducible research and collaboration in git and GitHub for Rstudio users"
 
-Forked (explicitly) and adapted from the repository
-"Version control for scientific workflows workshop",
-project for a workshop ran at the Division of Insurance Medicine,
-Karolinska Institutet, on June 20, 2023.
+(Adapted, explicit fork from the repository
+["Version control for scientific workflows workshop"](https://github.com/DaniMori/vc-workshop).)
+
+## Past editions
+
+- Workshop "Version control for scientific workflows workshop" at the Division of Insurance Medicine,
+Karolinska Institutet (Stockholm, Sweden - Jun 20, 2023).
+
+- Workshop “Reproducible research and collaboration in git and GitHub” at the 2024 SORTEE Conference (Online - Oct 15, 2024).
+
+- Workshop "Reproducible research and collaboration in git and GitHub for Rstudio users" at the In-person SIPS 2025 Meeting (Budapest, Hungary - Jun 26, 2025).
 
 # License
 
@@ -40,17 +46,26 @@ by [Daniel Morillo][profile] and licensed under the
 
 [profile]: https://github.com/DaniMori
 
-### Dataset ["dat/penguins.csv"][ds]
+### Dataset ["dat/breslow_chatterjee_1999.csv"][ds]
 
-[ds]: dat/penguins.csv
+[ds]: dat/breslow_chatterjee_1999.csv
 
-Dataset `penguins` from the R [{palmerpenguins} package][palmerpenguins]
-v0.1.1, originally from:
+Dataset `nwtco` from the R [{survival} package][survival]
+v3.5-5, originally from:
 
-[palmerpenguins]: https://cran.r-project.org/package=palmerpenguins
+[survival]: https://cran.r-project.org/package=survival
 
 ::: {#refs}
 :::
+
+### Script ["src/Analysis.R"][script]
+
+[script]: src/Analysis.R
+
+Adapted from the [`nwtco` help page][nwtco] of the R
+[{survival} package][survival] v3.5-5.
+
+[nwtco]: https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco
 
 ### Pictures
 
@@ -164,20 +179,21 @@ renv::restore(confirm = FALSE)
 The file structure of this repository is as follows:
 
 ```
-sortee-git-workshop
+git-workshop
 |
-|--- dat          (To store input datasets; must NEVER be checked-in to Github)
+|--- dat          (Contains a sample dataset for the workshop; must NEVER be
+|                 checked-in to Github)
 |
 |--- doc          (To store important documentation of the project)
 |    |
 |    |--- minutes (To store meeting minutes)
 |
+|--- notebooks    (Contains sample exercise notebooks for the workshop)
+|
 |--- output       (Processing outputs; files must be individually "checked-in"
 |                 when necessary)
 |
 |--- renv         (System library necesssary for `renv` to work. DON'T TOUCH)
-|
-|--- src          (Source scripts that implement the main processes)
 |
 |--- www          (Project assets, e.g., images, bibliography files, etc.)
 ```
@@ -231,11 +247,11 @@ Follow these steps to do so:
 1. Render file "output/slide-deck.qmd".
 
 2. Host output "output/slide-deck.html" (the audience version) in a cloud
-   storage service (e.g., Dropbox, OneDrive, etc.).
+   storage service (e.g., OSF, Dropbox, OneDrive, etc.).
 
 3. Create a public link to share the audience version publicly.
 
-4. Update slide "Setup" with your own link (in line 65).
+4. Update slide "Setup" with your own link (in line 74).
 
 5. Render "output/slide-deck.qmd" again.
 

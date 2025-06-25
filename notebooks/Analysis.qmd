@@ -1,0 +1,114 @@
+---
+title: "Sample analysis"
+format: docx
+---
+
+```{r setup, include=FALSE}
+# Load packages:
+
+library(knitr)
+library(here)
+library(readr)
+library(dplyr)
+library(forcats)
+library(stringr)
+library(tidyr)
+library(labelled)
+# library(gtsummary) # TODO: Uncomment (& install packages if using {gtsummary})
+# library(broom)         # These two do not need to be loaded actually, but they
+# library(broom.helpers) #   need to be installed for {gtsummary} to work.
+library(survival)
+
+
+# Environment configuration:
+
+## Set working directory to the project root (reproducibly):
+opts_knit$set(root.dir = here())
+
+# Set chunk options:
+opts_chunk$set(echo = FALSE) # Omit syntax from output
+```
+
+# Introduction
+
+We will replicate the data analysis in the [`nwtco` help page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco) of the R [{survival} package](https://cran.r-project.org/package=survival) v3.5-5.
+
+# Methods
+
+We load and preprocess the dataset, and then compute their descriptive statistics and the contingency table of the cancer histologies.
+Finally, we fit a Cox proportional hazards model to the data.
+
+```{r preprocess-data}
+## Read dataset:
+study_data <- read_csv(
+  # TODO: Change "<dataset_filename>" by the name of your own dataset, e.g.:
+  # file = "dat/breslow_chatterjee_1999.csv",
+  file = "dat/<dataset_filename>",
+  col_types = cols(
+    instit       = col_factor(),
+    histol       = col_factor(),
+    stage        = col_factor(levels = as.character(1:4), ordered = TRUE),
+    study        = col_factor(),
+    in.subcohort = col_logical(),
+    .default     = col_integer()
+  )
+)
+
+## Recode values:
+study_data <- study_data |> mutate(
+  instit = instit |>
+    factor(levels = 1:2, labels = c("Favourable", "Unfavourable")),
+  histol = histol |>
+    factor(levels = 1:2, labels = c("Favourable", "Unfavourable")),
+  stage  = stage  |>
+    factor(levels = 1:4, labels = c('I', 'II', 'III', 'IV'))
+)
+
+## Assign labels:
+# (see https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco
+#   for more info):
+study_data <- study_data |> set_variable_labels(
+  instit = "Histology (from local institution)",
+  histol = "Histology (from central lab)",
+  stage  = "Disease stage",
+  study  = "Study",
+  rel    = "Relapse", # As a 0/1 integer for compatibility with {survival}
+  edrel  = "Time to relapse (days)",
+  age    = "Age (months)"
+  ## TODO: Transform `edrel` and `age` to years?
+)
+
+
+## Filter only cases in the example in Breslow & Chatterjee (1999):
+study_data <- study_data |>
+  filter(in.subcohort)   |>
+  select(-in.subcohort)
+```
+
+```{r model-fit}
+survival_fit <- coxph(Surv(edrel, rel) ~ histol + instit, data = study_data)
+## TODO: Add covariates?
+```
+
+# Results
+
+In the following we see the descriptive statistics and the contingency table.
+
+```{r descriptives-table}
+## TODO: Uncomment next line if using {gtsummary}
+# study_data |> tbl_summary(include = -seqno)
+```
+
+<br>
+
+```{r contingency-table}
+## TODO: Uncomment next line if using {gtsummary}
+# study_data |> tbl_cross(row = instit, col = histol)
+```
+
+The next table shows the coefficients of the model.
+
+```{r model-output}
+## TODO: Uncomment next line if using {gtsummary}
+# survival_fit |> tbl_regression()
+```

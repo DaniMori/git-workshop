@@ -1,12 +1,25 @@
 
-# Respository `sortee-git-workshop`
+# Repository `git-workshop`
 
-Workshop “Reproducible research and collaboration in git and GitHub” at
-the 2024 SORTEE Conference.
+Workshop “Reproducible research and collaboration in git and GitHub for
+Rstudio users”
 
-Forked (explicitly) and adapted from the repository “Version control for
-scientific workflows workshop”, project for a workshop ran at the
-Division of Insurance Medicine, Karolinska Institutet, on June 20, 2023.
+(Adapted, explicit fork from the repository [“Version control for
+scientific workflows
+workshop”](https://github.com/DaniMori/vc-workshop).)
+
+## Past editions
+
+- Workshop “Version control for scientific workflows workshop” at the
+  Division of Insurance Medicine, Karolinska Institutet (Stockholm,
+  Sweden - Jun 20, 2023).
+
+- Workshop “Reproducible research and collaboration in git and GitHub”
+  at the 2024 SORTEE Conference (Online - Oct 15, 2024).
+
+- Workshop “Reproducible research and collaboration in git and GitHub
+  for Rstudio users” at the In-person SIPS 2025 Meeting (Budapest,
+  Hungary - Jun 26, 2025).
 
 # License
 
@@ -22,15 +35,32 @@ template created by [Daniel Morillo](https://github.com/DaniMori) and
 licensed under the [Creative Commons Attribution 4.0 International
 license](https://creativecommons.org/licenses/by/4.0/).
 
-### Dataset [“dat/penguins.csv”](dat/penguins.csv)
+### Dataset [“dat/breslow_chatterjee_1999.csv”](dat/breslow_chatterjee_1999.csv)
 
-Dataset `penguins` from the R [{palmerpenguins}
-package](https://cran.r-project.org/package=palmerpenguins) v0.1.1,
-originally from:
+Dataset `nwtco` from the R [{survival}
+package](https://cran.r-project.org/package=survival) v3.5-5, originally
+from:
 
-<div id="refs">
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
+
+<div id="ref-breslow_design_1999" class="csl-entry">
+
+Breslow, N. E., and N. Chatterjee. 1999. “Design and Analysis of
+Two-Phase Studies with Binary Outcome Applied to Wilms Tumour
+Prognosis.” *Journal of the Royal Statistical Society: Series C (Applied
+Statistics)* 48 (4): 457–68. <https://doi.org/10.1111/1467-9876.00165>.
 
 </div>
+
+</div>
+
+### Script [“src/Analysis.R”](src/Analysis.R)
+
+Adapted from the [`nwtco` help
+page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco)
+of the R [{survival}
+package](https://cran.r-project.org/package=survival) v3.5-5.
 
 ### Pictures
 
@@ -44,33 +74,33 @@ Origin of all the image files attributed in the corresponding slides in
 Start by installing the following software components:
 
 - [R version
-  4.4.2](https://cran.rstudio.com/bin/windows/base/old/4.4.2/): In
+  4.5.1](https://cran.rstudio.com/bin/windows/base/old/4.5.1/): In
   Windows, using the [binary
-  installer](https://cran.rstudio.com/bin/windows/base/old/4.4.2/R-4.4.2-win.exe)
+  installer](https://cran.rstudio.com/bin/windows/base/old/4.5.1/R-4.5.1-win.exe)
   is recommended.
 
 <!-- -->
 
 - [Rstudio Desktop](https://posit.co/download/rstudio-desktop/):
   Although not strictly necessary, it is recommended to install the
-  Rstudio IDE; for strict reproducibility, use build [2024.12.0+467 for
+  Rstudio IDE; for strict reproducibility, use build [2025.05.1+513 for
   Windows
-  10/11](https://download1.rstudio.org/electron/windows/RStudio-2024.12.0-467.exe).
+  10/11](https://download1.rstudio.org/electron/windows/RStudio-2025.05.1-513.exe).
 
 <!-- -->
 
 - [Quarto publishing system](https://quarto.org/): An additional
   component used by Rstudio to generate and publish literate computing
-  outputs. For strict reproducibility please use build 1.5.57; On
+  outputs. For strict reproducibility please use build 1.6.42; On
   Windows, use [the 64-bit
-  installer](https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.57/quarto-1.5.57-win.msi).
+  installer](https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-win.msi).
 
 <!-- -->
 
 - [Git client](https://git-scm.com/download): Install the Git client in
   order to be able to clone locally the project repository. On Windows,
   use [the 64-bit Windows
-  installer](https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe).
+  installer](https://github.com/git-for-windows/git/releases/download/v2.50.0.windows.1/Git-2.50.0-64-bit.exe).
 
 ## Installing the project locally
 
@@ -128,20 +158,21 @@ renv::restore(confirm = FALSE)
 
 The file structure of this repository is as follows:
 
-    sortee-git-workshop
+    git-workshop
     |
-    |--- dat          (To store input datasets; must NEVER be checked-in to Github)
+    |--- dat          (Contains a sample dataset for the workshop; must NEVER be
+    |                 checked-in to Github)
     |
     |--- doc          (To store important documentation of the project)
     |    |
     |    |--- minutes (To store meeting minutes)
     |
+    |--- notebooks    (Contains sample exercise notebooks for the workshop)
+    |
     |--- output       (Processing outputs; files must be individually "checked-in"
     |                 when necessary)
     |
     |--- renv         (System library necesssary for `renv` to work. DON'T TOUCH)
-    |
-    |--- src          (Source scripts that implement the main processes)
     |
     |--- www          (Project assets, e.g., images, bibliography files, etc.)
 
@@ -198,11 +229,11 @@ Follow these steps to do so:
 1.  Render file “output/slide-deck.qmd”.
 
 2.  Host output “output/slide-deck.html” (the audience version) in a
-    cloud storage service (e.g., Dropbox, OneDrive, etc.).
+    cloud storage service (e.g., OSF, Dropbox, OneDrive, etc.).
 
 3.  Create a public link to share the audience version publicly.
 
-4.  Update slide “Setup” with your own link (in line 65).
+4.  Update slide “Setup” with your own link (in line 74).
 
 5.  Render “output/slide-deck.qmd” again.
 
