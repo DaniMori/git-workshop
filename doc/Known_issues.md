@@ -108,15 +108,15 @@ Learners should use a personal access token
 
 The easiest solution is to create a perosnal access token (classic):
 
-- Verify your email address, if it hasn't been verified yet.
-- In the upper-right corner of any page on GitHub, click your profile photo,
-  then click `Settings`.
-- In the left sidebar, click Developer settings.
-- In the left sidebar, under Personal access tokens, click Tokens (classic).
-- Select Generate new token, then click Generate new token (classic).
-- In the "Note" field, give your token a descriptive name.
-- To give your token an expiration, select Expiration, then choose a default
-  option or click Custom to enter a date.
-- Select all the scopes.
-- Click Generate token.
-- Optionally, to copy the new token to your clipboard, click .
+-   Verify your email address, if it hasn't been verified yet.
+-   In the upper-right corner of any page on GitHub, click your profile photo,
+    then click `Settings`.
+-   In the left sidebar, click Developer settings.
+-   In the left sidebar, under Personal access tokens, click Tokens (classic).
+-   Select Generate new token, then click Generate new token (classic).
+-   In the "Note" field, give your token a descriptive name.
+-   To give your token an expiration, select Expiration, then choose a default
+    option or click Custom to enter a date.
+-   Select all the scopes.
+-   Click Generate token.
+-   Optionally, to copy the new token to your clipboard, click .
