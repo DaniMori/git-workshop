@@ -84,7 +84,7 @@ Unknown. Make sure that the {renv} environment is completely updated by running
 
 ### Problem
 
-When the learner has had a GitHub account for long, and not used much, GitHub
+When the participant has had a GitHub account for long, and not used much, GitHub
 may ask to use an "access token" to confirm their identity.
 
 When trying to clone their own private repo then, instead of being prompted by
