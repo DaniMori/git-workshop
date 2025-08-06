@@ -88,7 +88,7 @@ When the participant has had a GitHub account for long, and not used much, GitHu
 may ask to use an "access token" to confirm their identity.
 
 When trying to clone their own private repo then, instead of being prompted by
-Rstudio to authenticate with the browser, an authentication issues rises.
+Rstudio to authenticate with the browser, an authentication issue arises.
 
 ### Cause
 
