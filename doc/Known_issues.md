@@ -97,9 +97,10 @@ authentication for all authenticated Git operations. Beginning August 13, 2021,
 they no longer accept account passwords when authenticating Git operations on
 GitHub.com.
 
-It affects the following workflows: - Command line Git access - Desktop
-applications using Git (GitHub Desktop is unaffected) - Any apps/services that
-access Git repositories on GitHub.com directly using their password
+It affects the following workflows: 
+- Command line Git access
+- Desktop applications using Git (GitHub Desktop is unaffected)
+- Any apps/services that access Git repositories on GitHub.com directly using their password
 
 ### Solution
 
