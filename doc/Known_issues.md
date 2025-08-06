@@ -103,7 +103,7 @@ access Git repositories on GitHub.com directly using their password
 
 ### Solution
 
-Learners should use a personal access token
+Participants should use a personal access token
 (<https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>)
 
 The easiest solution is to create a perosnal access token (classic):
