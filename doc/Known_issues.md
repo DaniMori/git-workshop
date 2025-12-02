@@ -89,7 +89,7 @@ When trying to clone their own private repo, GitHub asks the user for an "access
 ### Cause
 
 In July 2020, GitHub announced their intention to require the use of token-based authentication [here](https://github.blog/news-insights/company-news/token-authentication-requirements-for-api-and-git-operations/)
-authentication for all authenticated Git operations. Beginning August 13, 2021,
+for all authenticated Git operations. Beginning August 13, 2021,
 they no longer accept account passwords when authenticating Git operations on
 GitHub.com.
 
