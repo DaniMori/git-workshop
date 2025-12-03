@@ -1,6 +1,10 @@
 ---
 title: "Known issues"
 output: github_document
+editor:
+  markdown:
+    wrap:      80
+    canonical: true
 ---
 
 # Introduction
@@ -77,3 +81,39 @@ environment was not completely restored
 Unknown. Make sure that the {renv} environment is completely updated by running
 `renv::status()`. Try to restore the environment running
 `renv::restore(confirm = FALSE)` if the environment is not completely restored.
+
+### Problem
+
+When trying to clone their own private repo, GitHub asks the user for an "access token" to confirm their identity.
+
+### Cause
+
+In July 2020, GitHub announced their intention to require the use of token-based authentication [here](https://github.blog/news-insights/company-news/token-authentication-requirements-for-api-and-git-operations/)
+for all authenticated Git operations. Beginning August 13, 2021,
+they no longer accept account passwords when authenticating Git operations on
+GitHub.com.
+
+It affects the following workflows: 
+- Command line Git access
+- Desktop applications using Git (GitHub Desktop is unaffected)
+- Any apps/services that access Git repositories on GitHub.com directly using their password
+
+### Solution
+
+Participants should use a personal access token
+(<https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>)
+
+The easiest solution is to create a perosnal access token (classic):
+
+-   Verify your email address, if it hasn't been verified yet.
+-   In the upper-right corner of any page on GitHub, click your profile photo,
+    then click `Settings`.
+-   In the left sidebar, click Developer settings.
+-   In the left sidebar, under Personal access tokens, click Tokens (classic).
+-   Select Generate new token, then click Generate new token (classic).
+-   In the "Note" field, give your token a descriptive name.
+-   To give your token an expiration, select Expiration, then choose a default
+    option or click Custom to enter a date.
+-   Select all the scopes.
+-   Click Generate token.
+-   Optionally, to copy the new token to your clipboard, click .
